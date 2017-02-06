@@ -1,0 +1,120 @@
+glc+2*atp = fdp
+(glc+2*atp)/2 = g3p
+(glc+2*atp)/2-4*atp = accoa
+(glc+2*atp)/2-4*atp+oaa = icit
+(glc+2*atp)/2-4*atp+oaa-3*atp = succ
+(glc+2*atp)/2-4*atp+oaa-3*atp-1.5*atp = oaa
+glc = 15*atp
+
+g6p = glc+atp = 16*atp
+f6p = g6p = 16*atp
+fdp = f6p+atp = 17*atp
+dhap = 0.5*fdp = 8.5*atp
+g3p = 0.5*fdp = 8.5*atp
+13dpg = g3p-atp = 7.5*atp
+3pg = 13dpg-atp = 6.5*atp
+2pg = 3pg = 6.5*atp
+pep = 2pg = 6.5*atp
+pyr = pep-atp = 5.5*atp
+accoa = pyr-atp = 4.5*atp
+oaa = pep-atp = 5.5*atp
+
+cit = accoa+oaa = 4.5*atp+oaa = 10*atp
+icit = cit = 4.5*atp+oaa = 10*atp
+akg = icit-atp = 3.5*atp+oaa = 9*atp
+succoa = akg-atp = 2.5*atp+oaa = 8*atp
+succ = succoa-atp = 1.5*atp+oaa = 7*atp
+fum = succ-.5*atp = atp+oaa = 6.5*atp
+mal = fum = atp+oaa = 6.5*atp
+glx = icit-succ = 3*atp
+
+6pgl = g6p-atp = 15*atp
+6pgc = 6pgl = 15*atp
+ru5p = 6pgc-atp = 14*atp
+xu5p = ru5p = 14*atp
+r5p = ru5p = 14*atp
+s7p = r5p+xu5p-g3p = 19.5*atp
+e4p = g3p+s7p-f6p = 12*atp
+2ddg6p = 6pgc = 15*atp
+
+actp = accoa = 4.5*atp
+ac = actp-atp = 3.5*atp
+etoh = accoa+2*atp = 6.5*atp
+lac = pyr+atp = 6.5*atp
+formate = pyr-accoa = atp
+mql8 = nadh = atp
+chor = e4p+2*pep+2*atp = 27*atp
+
+Accumulation of glycolysis species:
+    dhap    0.273
+    13dpg   32.061
+    3pg     7.838
+    pep     6.593
+    pyr     0.008
+    Equivalent atp: 336.6
+    Equivalent glc: 22.4        (62.5% of total glucose)
+
+Accumulation of TCA species:
+    succ    1.672
+    mal     3.461
+    Equivalent atp: 34.2
+    Equivalent glc: 2.28        (6.4% of total glucose)
+
+Accumulation of PP species:
+    r5p     0.697
+    Equivalent atp: 0.98
+    Equivalent glc: 0.07        (0.2% of total glucose)
+    
+Accumulation of byproducts:
+    ac      30.998
+    lac     3.616
+    Equivalent atp: 132.0
+    Equivalent glc: 8.8         (24.5% of total glucose)
+
+Remainder (CAT and other):
+    6.4%
+
+#glu = akg+atp = 10*atp
+#gln = glu+atp = 11*atp
+#ala = glu+pyr = 15.5*atp
+#tyr = glu+chor-akg-atp = 27*atp
+#ser = glu+3pg-akg-atp = 6.5*atp
+#phe = glu+chor-akg = 28*atp
+#pro = glu+3*atp = 13*atp
+#trp = ser+gln+chor+r5p+atp-glu-pyr-g3p = 35.5*atp
+#his = gln+r5p+3*atp-akg-2*atp = 17*atp              Ignore aicar (although expensive to make, it doesn't really go anywhere useful)
+#cys = ser+accoa-ac = 7.5*atp
+#asp = glu+oaa-akg = 6.5*atp
+#asn = asp+2*atp = 8.5*atp
+#arg = glu+accoa+6*atp+gln+asp-akg-ac-fum = 19*atp
+#gly = ser = 6.5*atp                                 Ignore all thf species
+#thr = asp+4*atp = 10.5*atp
+#ile = thr+pyr+glu+atp-akg = 18*atp
+#leu = 2*pyr+glu+atp+accoa-atp-akg = 16.5*atp
+#lys = asp+3*atp+pyr+succoa+glu-akg-succ = 17*atp
+#met = asp+cys+succoa+3*atp-succ-pyr = 12.5*atp
+#val = 2*pyr+atp+glu-akg = 13*atp
+
+#CAT cost:
+#    CAT = 876*atp+15*ala+10*asn+5*arg+12*asp+5*cys+12*glu+13*gln+10*gly+12*his+9*ile+13*leu+12*lys+9*met+20*phe+7*pro+10*ser+13*thr+5*trp+11*tyr+16*val = 876*atp+3288*atp = 4164*atp
+
+#    CAT production: 0.0178 mM
+#    Equivalent atp: 74.2
+#    Equivalent glc: 4.9         (13.8% of total glucose)
+
+#With detailed TX/TL cost:
+#    CAT = 2196*atp+3288*atp = 5484*atp
+
+#    CAT production: 0.0178 mM
+#    Equivalent atp: 97.7
+#    Equivalent glc: 6.5         (18.1% of total glucose)
+
+#Alanine accumulation:
+#    3.85 mM alanine
+#    Equivalent atp: 59.7
+#    Equivalent glc: 4.0         (11.1% of total glucose)
+
+#Glutamine accumulation:
+#    2.28 mM alanine
+#    Equivalent atp: 25.1
+#    Equivalent glc: 1.7         (4.7% of total glucose)

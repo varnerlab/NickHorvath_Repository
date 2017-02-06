@@ -1,0 +1,85 @@
+GLC = experiment_data_dictionary["M_glc_D_c"].raw_measurement_array # column 1: hr; columns 2,3: mM
+
+# From t = 0 hr to t = 1 hr
+del_GLC = GLC[1,2]-GLC[4,2] # mM
+del_t = GLC[1,1]-GLC[4,1] # hr
+GLC_uptake_rate = abs(del_GLC/del_t) # mM/hr
+
+# R_PTS: M_pep_c+M_glc_D_c = M_g6p_c+M_pyr_c
+#tmp_reaction = rate_constant_array[1]*(E_R_PTS)*(M_pep_c/(saturation_constant_array[1,55] + M_pep_c))*(M_glc_D_c/(saturation_constant_array[1,54] + M_glc_D_c));
+
+#--------------------------------------------------------------------
+
+# Assume (M_pep_c/(saturation_constant_array[1,55] + M_pep_c)) ~ 0.9 during first hour
+# Assume (M_glc_D_c/(saturation_constant_array[1,54] + M_glc_D_c)) ~ 0.9 during first hour
+
+tmp_reaction = GLC_uptake_rate
+E_R_PTS = 1 # scaled enzyme concentration
+
+GLC_rate_constant = tmp_reaction/(E_R_PTS)/0.9/0.9 # 42.1 mM/hr
+
+#--------------------------------------------------------------------
+# Assume (M_pep_c/(saturation_constant_array[1,55] + M_pep_c)) ~ 0.5 during first hour
+# Assume (M_glc_D_c/(saturation_constant_array[1,54] + M_glc_D_c)) ~ 0.5 during first hour
+
+tmp_reaction = GLC_uptake_rate
+E_R_PTS = 1 # scaled enzyme concentration
+
+GLC_rate_constant = tmp_reaction/(E_R_PTS)/0.5/0.5 # 136.5 mM/hr
+
+#--------------------------------------------------------------------
+
+# Assume (M_pep_c/(saturation_constant_array[1,55] + M_pep_c)) ~ 0.1 during first hour
+# Assume (M_glc_D_c/(saturation_constant_array[1,54] + M_glc_D_c)) ~ 0.1 during first hour
+
+tmp_reaction = GLC_uptake_rate
+E_R_PTS = 1 # scaled enzyme concentration
+
+GLC_rate_constant = tmp_reaction/(E_R_PTS)/0.1/0.1 # 3413 mM/hr
+
+#--------------------------------------------------------------------
+
+CAT = experiment_data_dictionary["CAT"].raw_measurement_array # column 1: hr; columns 2,3: mM
+
+# From t = 0 hr to t = 3 hr
+del_CAT = CAT[1,2]-CAT[end,2] # mM
+del_t = CAT[1,1]-CAT[end,1] # hr
+CAT_production_rate = abs(del_CAT/del_t) # mM/hr
+
+# R_CAT: 15*M_ala_L_c+10*M_asn_L_c+5*M_arg_L_c+12*M_asp_L_c+5*M_cys_L_c+12*M_glu_L_c+13*M_gln_L_c+10*M_gly_L_c+12*M_his_L_c+9*M_ile_L_c+13*M_leu_L_c+12*M_lys_L_c+9*M_met_L_c+20*M_phe_L_c+7*M_pro_L_c+10*M_ser_L_c+13*M_thr_L_c+5*M_trp_L_c+11*M_tyr_L_c+16*M_val_L_c+219*M_atp_c+438*M_gtp_c = 219*M_amp_c+438*M_gdp_c+219*M_ppi_c+438*M_pi_c+CAT
+#tmp_reaction = rate_constant_array[155]*(E_R_CAT)*(REACTANT/(saturation_constant + REACTANT))^22;
+
+#--------------------------------------------------------------------
+
+# Assume (REACTANT/(saturation_constant + REACTANT)) ~ 0.9 during timecourse
+
+tmp_reaction = CAT_production_rate
+E_R_CAT = 1 # scaled enzyme concentration
+
+CAT_rate_constant = tmp_reaction/(E_R_CAT)/0.9^22 # 0.06 mM/hr
+
+#--------------------------------------------------------------------
+
+# Assume (REACTANT/(saturation_constant + REACTANT)) ~ 0.5 during timecourse
+
+tmp_reaction = CAT_production_rate
+E_R_CAT = 1 # scaled enzyme concentration
+
+CAT_rate_constant = tmp_reaction/(E_R_CAT)/0.5^22 # 26000 mM/hr
+
+#--------------------------------------------------------------------
+
+# Assume (REACTANT/(saturation_constant + REACTANT)) ~ 0.1 during timecourse
+
+tmp_reaction = CAT_production_rate
+E_R_CAT = 1 # scaled enzyme concentration
+
+CAT_rate_constant = tmp_reaction/(E_R_CAT)/0.1^22 # 6e19 mM/hr
+
+#--------------------------------------------------------------------
+
+
+
+
+
+
