@@ -37,6 +37,13 @@ sat_vector = vec(data_dictionary["SATURATION_CONSTANT_ARRAY"])
 sat_vector[find(sat_vector.>0)] = sat
 data_dictionary["SATURATION_CONSTANT_ARRAY"] = reshape(sat_vector,size(data_dictionary["SATURATION_CONSTANT_ARRAY"]))
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+data_dictionary["SATURATION_CONSTANT_ARRAY"][166,57] = 0.0004
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 #data_dictionary["SATURATION_CONSTANT_ARRAY"][167,59] = 0.001
 #data_dictionary["SATURATION_CONSTANT_ARRAY"][167,91] = 0.2
 #data_dictionary["SATURATION_CONSTANT_ARRAY"][167,60] = 0.2
@@ -102,25 +109,61 @@ xxp = axp+gxp+cxp+uxp
 xxp[:,1] = axp[:,1]
 
 ala = experiment_data_dictionary["M_ala_L_c"].raw_measurement_array
+<<<<<<< HEAD
+<<<<<<< HEAD
+asn	= experiment_data_dictionary["M_asn_L_c"].raw_measurement_array
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 asp = experiment_data_dictionary["M_asp_L_c"].raw_measurement_array
 cys = experiment_data_dictionary["M_cys_L_c"].raw_measurement_array
 gln = experiment_data_dictionary["M_gln_L_c"].raw_measurement_array
 gly = experiment_data_dictionary["M_gly_L_c"].raw_measurement_array
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 phe = experiment_data_dictionary["M_phe_L_c"].raw_measurement_array
 ser = experiment_data_dictionary["M_ser_L_c"].raw_measurement_array
 thr = experiment_data_dictionary["M_thr_L_c"].raw_measurement_array
 
 asn	= experiment_data_dictionary["M_asn_L_c"].raw_measurement_array
+<<<<<<< HEAD
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 his	= experiment_data_dictionary["M_his_L_c"].raw_measurement_array
 ile	= experiment_data_dictionary["M_ile_L_c"].raw_measurement_array
 leu	= experiment_data_dictionary["M_leu_L_c"].raw_measurement_array
 lys	= experiment_data_dictionary["M_lys_L_c"].raw_measurement_array
 met	= experiment_data_dictionary["M_met_L_c"].raw_measurement_array
+<<<<<<< HEAD
+<<<<<<< HEAD
+phe = experiment_data_dictionary["M_phe_L_c"].raw_measurement_array
 pro	= experiment_data_dictionary["M_pro_L_c"].raw_measurement_array
+ser = experiment_data_dictionary["M_ser_L_c"].raw_measurement_array
+thr = experiment_data_dictionary["M_thr_L_c"].raw_measurement_array
+=======
+pro	= experiment_data_dictionary["M_pro_L_c"].raw_measurement_array
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+pro	= experiment_data_dictionary["M_pro_L_c"].raw_measurement_array
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 trp = experiment_data_dictionary["M_trp_L_c"].raw_measurement_array
 tyr	= experiment_data_dictionary["M_tyr_L_c"].raw_measurement_array
 val	= experiment_data_dictionary["M_val_L_c"].raw_measurement_array
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+AA = ala+asn+asp+cys+gln+gly+his+ile+leu+lys+met+phe+pro+ser+thr+trp+tyr+val
+AA[:,1] = ala[:,1]
+
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 species = ["GLC" 82;"PYR" 84;"LAC" 86;"AC" 85;"SUCC" 100;"MAL" 87;"CAT" 80;"XXP" (88,89,90,91,92,93,94,95,96,97,98,99);"ATP" 88;"ADP" 89;"AMP" 90;"AXP" (88,89,90);"GTP" 91;"GDP" 92;"GMP" 93;"GXP" (91,92,93);"CTP" 97;"CDP" 98;"CMP" 99;"CXP" (97,98,99);"UTP" 94;"UDP" 95;"UMP" 96;"UXP" (94,95,96);"ALA" 108;"ARG" 43;"ASN" 104;"ASP" 101;"CYS" 105;"GLN" 119;"GLU" 118;"GLY" 102;"HIS" 107;"ILE" 103;"LEU" 117;"LYS" 106;"MET" 116;"PHE" 109;"PRO" 110;"SER" 111;"THR" 112;"TRP" 113;"TYR" 114;"VAL" 115]
 
 glc[:,1] *= TSTOP/3
@@ -378,7 +421,15 @@ xlabel("Time (h)")
 
 figure("Amino")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,1)
+=======
 subplot(5,4,1)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,1)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(ala[:,1],ala[:,2],ala[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,10])
 plt[:xticks](0:1:TSTOP)
@@ -386,6 +437,19 @@ plt[:yticks](0:2:10)
 ylabel("ALA (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,2)
+axis([0,TSTOP,0,4])
+plt[:xticks](0:1:TSTOP)
+plt[:yticks](0:1:4)
+ylabel("ARG (mM)")
+xlabel("Time (h)")
+
+subplot(5,5,3)
+=======
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 subplot(5,4,2)
 axis([0,TSTOP,0,15])
 plt[:xticks](0:1:TSTOP)
@@ -394,6 +458,10 @@ ylabel("ARG (mM)")
 xlabel("Time (h)")
 
 subplot(5,4,3)
+<<<<<<< HEAD
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(asn[:,1],asn[:,2],asn[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -401,7 +469,15 @@ plt[:yticks](0:1:4)
 ylabel("ASN (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,4)
+=======
 subplot(5,4,4)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,4)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(asp[:,1],asp[:,2],asp[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,3])
 plt[:xticks](0:1:TSTOP)
@@ -409,7 +485,15 @@ plt[:yticks](0:1:TSTOP)
 ylabel("ASP (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,5)
+=======
 subplot(5,4,5)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,5)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(cys[:,1],cys[:,2],cys[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -417,7 +501,15 @@ plt[:yticks](0:1:4)
 ylabel("CYS (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,6)
+=======
 subplot(5,4,6)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,6)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(gln[:,1],gln[:,2],gln[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -425,14 +517,30 @@ plt[:yticks](0:1:4)
 ylabel("GLN (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,7)
+=======
 subplot(5,4,7)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,7)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 axis([0,TSTOP,0,200])
 plt[:xticks](0:1:TSTOP)
 plt[:yticks](0:50:200)
 ylabel("GLU (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,8)
+=======
 subplot(5,4,8)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,8)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(gly[:,1],gly[:,2],gly[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -440,7 +548,15 @@ plt[:yticks](0:1:4)
 ylabel("GLY (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,9)
+=======
 subplot(5,4,9)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,9)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(his[:,1],his[:,2],his[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -448,7 +564,15 @@ plt[:yticks](0:1:4)
 ylabel("HIS (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,10)
+=======
 subplot(5,4,10)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,10)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(ile[:,1],ile[:,2],ile[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -456,7 +580,15 @@ plt[:yticks](0:1:4)
 ylabel("ILE (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,11)
+=======
 subplot(5,4,11)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,11)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(leu[:,1],leu[:,2],leu[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -464,7 +596,15 @@ plt[:yticks](0:1:4)
 ylabel("LEU (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,12)
+=======
 subplot(5,4,12)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,12)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(lys[:,1],lys[:,2],lys[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -472,7 +612,15 @@ plt[:yticks](0:1:4)
 ylabel("LYS (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,13)
+=======
 subplot(5,4,13)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,13)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(met[:,1],met[:,2],met[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -480,7 +628,15 @@ plt[:yticks](0:1:4)
 ylabel("MET (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,14)
+=======
 subplot(5,4,14)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,14)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(phe[:,1],phe[:,2],phe[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -488,7 +644,15 @@ plt[:yticks](0:1:4)
 ylabel("PHE (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,15)
+=======
 subplot(5,4,15)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,15)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(pro[:,1],pro[:,2],pro[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -496,7 +660,15 @@ plt[:yticks](0:1:4)
 ylabel("PRO (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,16)
+=======
 subplot(5,4,16)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,16)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(ser[:,1],ser[:,2],ser[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -504,7 +676,15 @@ plt[:yticks](0:1:4)
 ylabel("SER (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,17)
+=======
 subplot(5,4,17)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,17)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(thr[:,1],thr[:,2],thr[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -512,7 +692,15 @@ plt[:yticks](0:1:4)
 ylabel("THR (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,18)
+=======
 subplot(5,4,18)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,18)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(trp[:,1],trp[:,2],trp[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -520,7 +708,15 @@ plt[:yticks](0:1:4)
 ylabel("TRP (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,19)
+=======
 subplot(5,4,19)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,19)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(tyr[:,1],tyr[:,2],tyr[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,3])
 plt[:xticks](0:1:TSTOP)
@@ -528,7 +724,15 @@ plt[:yticks](0:1:3)
 ylabel("TYR (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,20)
+=======
 subplot(5,4,20)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+subplot(5,4,20)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 errorbar(val[:,1],val[:,2],val[:,3],fmt="ro",color="k",linewidth=2)
 axis([0,TSTOP,0,4])
 plt[:xticks](0:1:TSTOP)
@@ -536,6 +740,22 @@ plt[:yticks](0:1:4)
 ylabel("VAL (mM)")
 xlabel("Time (h)")
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+subplot(5,5,21)
+errorbar(AA[:,1],AA[:,2],AA[:,3],fmt="ro",color="k",linewidth=2)
+axis([0,TSTOP,0,40])
+plt[:xticks](0:1:TSTOP)
+plt[:yticks](0:10:40)
+ylabel("Σ AA (mM)")
+xlabel("Time (h)")
+
+X_AA = vec(X[:,108]+X[:,104]+X[:,101]+X[:,105]+X[:,119]+X[:,102]+X[:,107]+X[:,103]+X[:,117]+X[:,106]+X[:,116]+X[:,109]+X[:,110]+X[:,111]+X[:,112]+X[:,113]+X[:,114]+X[:,115])
+plot(Tsim,X_AA,"red",linewidth=1.5)
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 
 
 
@@ -555,7 +775,15 @@ for j in 1:size(species,1)
         subplot(4,4,amino_[j-8])
     else
         figure("Amino")
+<<<<<<< HEAD
+<<<<<<< HEAD
+        subplot(5,5,j-8-16)
+=======
         subplot(5,4,j-8-16)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+        subplot(5,4,j-8-16)
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
     end
     
     if typeof(index) == Int
@@ -824,6 +1052,14 @@ xlabel("Time (h)")
 
 tight_layout()
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+include("PlotFluxGLN.jl")
+=======
 
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
+=======
+
+>>>>>>> 61cf78e9c09edd9bd64c4ec3bd78b8b2ac7f313b
 
 
