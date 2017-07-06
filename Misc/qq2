@@ -1,0 +1,352 @@
+1	 id:M_g6p_c	 symbol:M_g6p_c
+2	 id:M_f6p_c	 symbol:M_f6p_c
+3	 id:M_fdp_c	 symbol:M_fdp_c
+4	 id:M_dhap_c	 symbol:M_dhap_c
+5	 id:M_g3p_c	 symbol:M_g3p_c
+6	 id:M_13dpg_c	 symbol:M_13dpg_c
+7	 id:M_3pg_c	 symbol:M_3pg_c
+8	 id:M_2pg_c	 symbol:M_2pg_c
+9	 id:M_oaa_c	 symbol:M_oaa_c
+10	 id:M_coa_c	 symbol:M_coa_c
+11	 id:M_accoa_c	 symbol:M_accoa_c
+12	 id:M_6pgl_c	 symbol:M_6pgl_c
+13	 id:M_6pgc_c	 symbol:M_6pgc_c
+14	 id:M_ru5p_D_c	 symbol:M_ru5p_D_c
+15	 id:M_xu5p_D_c	 symbol:M_xu5p_D_c
+16	 id:M_r5p_c	 symbol:M_r5p_c
+17	 id:M_s7p_c	 symbol:M_s7p_c
+18	 id:M_e4p_c	 symbol:M_e4p_c
+19	 id:M_2ddg6p_c	 symbol:M_2ddg6p_c
+20	 id:M_cit_c	 symbol:M_cit_c
+21	 id:M_icit_c	 symbol:M_icit_c
+22	 id:M_akg_c	 symbol:M_akg_c
+23	 id:M_succoa_c	 symbol:M_succoa_c
+24	 id:M_q8_c	 symbol:M_q8_c
+25	 id:M_fum_c	 symbol:M_fum_c
+26	 id:M_q8h2_c	 symbol:M_q8h2_c
+27	 id:M_mql8_c	 symbol:M_mql8_c
+28	 id:M_mqn8_c	 symbol:M_mqn8_c
+29	 id:M_h_e	 symbol:M_h_e
+30	 id:M_ppi_c	 symbol:M_ppi_c
+31	 id:M_glx_c	 symbol:M_glx_c
+32	 id:M_actp_c	 symbol:M_actp_c
+33	 id:M_etoh_c	 symbol:M_etoh_c
+34	 id:M_for_c	 symbol:M_for_c
+35	 id:M_nh3_c	 symbol:M_nh3_c
+36	 id:M_arg_L_c	 symbol:M_arg_L_c
+37	 id:M_h2s_c	 symbol:M_h2s_c
+38	 id:M_thf_c	 symbol:M_thf_c
+39	 id:M_mlthf_c	 symbol:M_mlthf_c
+40	 id:M_aicar_c	 symbol:M_aicar_c
+41	 id:M_5mthf_c	 symbol:M_5mthf_c
+42	 id:M_chor_c	 symbol:M_chor_c
+43	 id:M_h2o2_c	 symbol:M_h2o2_c
+44	 id:M_mglx_c	 symbol:M_mglx_c
+45	 id:M_prop_c	 symbol:M_prop_c
+46	 id:M_indole_c	 symbol:M_indole_c
+47	 id:M_cadav_c	 symbol:M_cadav_c
+48	 id:M_gaba_c	 symbol:M_gaba_c
+49	 id:M_glycoA_c	 symbol:M_glycoA_c
+50	 id:M_78mdp_c	 symbol:M_78mdp_c
+51	 id:M_4adochor_c	 symbol:M_4adochor_c
+52	 id:M_4abz_c	 symbol:M_4abz_c
+53	 id:M_78dhf_c	 symbol:M_78dhf_c
+54	 id:M_dhf_c	 symbol:M_dhf_c
+55	 id:M_methf_c	 symbol:M_methf_c
+56	 id:M_10fthf_c	 symbol:M_10fthf_c
+57	 id:M_prpp_c	 symbol:M_prpp_c
+58	 id:M_hco3_c	 symbol:M_hco3_c
+59	 id:M_clasp_c	 symbol:M_clasp_c
+60	 id:M_or_c	 symbol:M_or_c
+61	 id:M_omp_c	 symbol:M_omp_c
+62	 id:M_5pbdra	 symbol:M_5pbdra
+63	 id:M_gar_c	 symbol:M_gar_c
+64	 id:M_fgar_c	 symbol:M_fgar_c
+65	 id:M_fgam_c	 symbol:M_fgam_c
+66	 id:M_air_c	 symbol:M_air_c
+67	 id:M_cair_c	 symbol:M_cair_c
+68	 id:M_saicar_c	 symbol:M_saicar_c
+69	 id:M_faicar_c	 symbol:M_faicar_c
+70	 id:M_imp_c	 symbol:M_imp_c
+71	 id:M_xmp_c	 symbol:M_xmp_c
+72	 id:GENE_CAT	 symbol:GENE_CAT
+73	 id:RNAP	 symbol:RNAP
+74	 id:OPEN_GENE_CAT	 symbol:OPEN_GENE_CAT
+75	 id:mRNA_CAT	 symbol:mRNA_CAT
+76	 id:RIBOSOME	 symbol:RIBOSOME
+77	 id:RIBOSOME_START_CAT	 symbol:RIBOSOME_START_CAT
+78	 id:M_ala_L_c_tRNA	 symbol:M_ala_L_c_tRNA
+79	 id:M_arg_L_c_tRNA	 symbol:M_arg_L_c_tRNA
+80	 id:M_asn_L_c_tRNA	 symbol:M_asn_L_c_tRNA
+81	 id:M_asp_L_c_tRNA	 symbol:M_asp_L_c_tRNA
+82	 id:M_cys_L_c_tRNA	 symbol:M_cys_L_c_tRNA
+83	 id:M_glu_L_c_tRNA	 symbol:M_glu_L_c_tRNA
+84	 id:M_gln_L_c_tRNA	 symbol:M_gln_L_c_tRNA
+85	 id:M_gly_L_c_tRNA	 symbol:M_gly_L_c_tRNA
+86	 id:M_his_L_c_tRNA	 symbol:M_his_L_c_tRNA
+87	 id:M_ile_L_c_tRNA	 symbol:M_ile_L_c_tRNA
+88	 id:M_leu_L_c_tRNA	 symbol:M_leu_L_c_tRNA
+89	 id:M_lys_L_c_tRNA	 symbol:M_lys_L_c_tRNA
+90	 id:M_met_L_c_tRNA	 symbol:M_met_L_c_tRNA
+91	 id:M_phe_L_c_tRNA	 symbol:M_phe_L_c_tRNA
+92	 id:M_pro_L_c_tRNA	 symbol:M_pro_L_c_tRNA
+93	 id:M_ser_L_c_tRNA	 symbol:M_ser_L_c_tRNA
+94	 id:M_thr_L_c_tRNA	 symbol:M_thr_L_c_tRNA
+95	 id:M_trp_L_c_tRNA	 symbol:M_trp_L_c_tRNA
+96	 id:M_tyr_L_c_tRNA	 symbol:M_tyr_L_c_tRNA
+97	 id:M_val_L_c_tRNA	 symbol:M_val_L_c_tRNA
+98	 id:PROTEIN_CAT	 symbol:PROTEIN_CAT
+99	 id:tRNA	 symbol:tRNA
+100	 id:M_glc_D_c	 symbol:M_glc_D_c
+101	 id:M_pep_c	 symbol:M_pep_c
+102	 id:M_pyr_c	 symbol:M_pyr_c
+103	 id:M_ac_c	 symbol:M_ac_c
+104	 id:M_lac_D_c	 symbol:M_lac_D_c
+105	 id:M_mal_L_c	 symbol:M_mal_L_c
+106	 id:M_atp_c	 symbol:M_atp_c
+107	 id:M_adp_c	 symbol:M_adp_c
+108	 id:M_amp_c	 symbol:M_amp_c
+109	 id:M_gtp_c	 symbol:M_gtp_c
+110	 id:M_gdp_c	 symbol:M_gdp_c
+111	 id:M_gmp_c	 symbol:M_gmp_c
+112	 id:M_utp_c	 symbol:M_utp_c
+113	 id:M_udp_c	 symbol:M_udp_c
+114	 id:M_ump_c	 symbol:M_ump_c
+115	 id:M_ctp_c	 symbol:M_ctp_c
+116	 id:M_cdp_c	 symbol:M_cdp_c
+117	 id:M_cmp_c	 symbol:M_cmp_c
+118	 id:M_succ_c	 symbol:M_succ_c
+119	 id:M_asp_L_c	 symbol:M_asp_L_c
+120	 id:M_gly_L_c	 symbol:M_gly_L_c
+121	 id:M_ile_L_c	 symbol:M_ile_L_c
+122	 id:M_asn_L_c	 symbol:M_asn_L_c
+123	 id:M_cys_L_c	 symbol:M_cys_L_c
+124	 id:M_lys_L_c	 symbol:M_lys_L_c
+125	 id:M_his_L_c	 symbol:M_his_L_c
+126	 id:M_ala_L_c	 symbol:M_ala_L_c
+127	 id:M_phe_L_c	 symbol:M_phe_L_c
+128	 id:M_pro_L_c	 symbol:M_pro_L_c
+129	 id:M_ser_L_c	 symbol:M_ser_L_c
+130	 id:M_thr_L_c	 symbol:M_thr_L_c
+131	 id:M_trp_L_c	 symbol:M_trp_L_c
+132	 id:M_tyr_L_c	 symbol:M_tyr_L_c
+133	 id:M_val_L_c	 symbol:M_val_L_c
+134	 id:M_met_L_c	 symbol:M_met_L_c
+135	 id:M_leu_L_c	 symbol:M_leu_L_c
+136	 id:M_glu_L_c	 symbol:M_glu_L_c
+137	 id:M_gln_L_c	 symbol:M_gln_L_c
+138	 id:M_o2_c	 symbol:M_o2_c
+139	 id:M_co2_c	 symbol:M_co2_c
+140	 id:M_pi_c	 symbol:M_pi_c
+141	 id:M_nh4_c	 symbol:M_nh4_c
+142	 id:M_so4_c	 symbol:M_so4_c
+143	 id:M_h_c	 symbol:M_h_c
+144	 id:M_h2o_c	 symbol:M_h2o_c
+145	 id:M_nad_c	 symbol:M_nad_c
+146	 id:M_nadh_c	 symbol:M_nadh_c
+147	 id:M_nadp_c	 symbol:M_nadp_c
+148	 id:M_nadph_c	 symbol:M_nadph_c
+push!(initial_condition_array,1.0);	#	149	 id:E_R_glk_atp	 symbol:E_R_glk_atp
+push!(initial_condition_array,1.0);	#	150	 id:E_R_pgi	 symbol:E_R_pgi
+push!(initial_condition_array,1.0);	#	151	 id:E_R_pgi_R	 symbol:E_R_pgi_R
+push!(initial_condition_array,1.0);	#	152	 id:E_R_pfk	 symbol:E_R_pfk
+push!(initial_condition_array,1.0);	#	153	 id:E_R_fdp	 symbol:E_R_fdp
+push!(initial_condition_array,1.0);	#	154	 id:E_R_fbaA	 symbol:E_R_fbaA
+push!(initial_condition_array,1.0);	#	155	 id:E_R_fbaA_R	 symbol:E_R_fbaA_R
+push!(initial_condition_array,1.0);	#	156	 id:E_R_tpiA	 symbol:E_R_tpiA
+push!(initial_condition_array,1.0);	#	157	 id:E_R_tpiA_R	 symbol:E_R_tpiA_R
+push!(initial_condition_array,1.0);	#	158	 id:E_R_gapA	 symbol:E_R_gapA
+push!(initial_condition_array,1.0);	#	159	 id:E_R_gapA_R	 symbol:E_R_gapA_R
+push!(initial_condition_array,1.0);	#	160	 id:E_R_pgk	 symbol:E_R_pgk
+push!(initial_condition_array,1.0);	#	161	 id:E_R_pgk_R	 symbol:E_R_pgk_R
+push!(initial_condition_array,1.0);	#	162	 id:E_R_gpm	 symbol:E_R_gpm
+push!(initial_condition_array,1.0);	#	163	 id:E_R_gpm_R	 symbol:E_R_gpm_R
+push!(initial_condition_array,1.0);	#	164	 id:E_R_eno	 symbol:E_R_eno
+push!(initial_condition_array,1.0);	#	165	 id:E_R_eno_R	 symbol:E_R_eno_R
+push!(initial_condition_array,1.0);	#	166	 id:E_R_pyk	 symbol:E_R_pyk
+push!(initial_condition_array,1.0);	#	167	 id:E_R_pck	 symbol:E_R_pck
+push!(initial_condition_array,1.0);	#	168	 id:E_R_ppc	 symbol:E_R_ppc
+push!(initial_condition_array,1.0);	#	169	 id:E_R_pdh	 symbol:E_R_pdh
+push!(initial_condition_array,1.0);	#	170	 id:E_R_pps	 symbol:E_R_pps
+push!(initial_condition_array,1.0);	#	171	 id:E_R_zwf	 symbol:E_R_zwf
+push!(initial_condition_array,1.0);	#	172	 id:E_R_zwf_R	 symbol:E_R_zwf_R
+push!(initial_condition_array,1.0);	#	173	 id:E_R_pgl	 symbol:E_R_pgl
+push!(initial_condition_array,1.0);	#	174	 id:E_R_gnd	 symbol:E_R_gnd
+push!(initial_condition_array,1.0);	#	175	 id:E_R_rpe	 symbol:E_R_rpe
+push!(initial_condition_array,1.0);	#	176	 id:E_R_rpe_R	 symbol:E_R_rpe_R
+push!(initial_condition_array,1.0);	#	177	 id:E_R_rpi	 symbol:E_R_rpi
+push!(initial_condition_array,1.0);	#	178	 id:E_R_rpi_R	 symbol:E_R_rpi_R
+push!(initial_condition_array,1.0);	#	179	 id:E_R_talAB	 symbol:E_R_talAB
+push!(initial_condition_array,1.0);	#	180	 id:E_R_talAB_R	 symbol:E_R_talAB_R
+push!(initial_condition_array,1.0);	#	181	 id:E_R_tkt1	 symbol:E_R_tkt1
+push!(initial_condition_array,1.0);	#	182	 id:E_R_tkt1_R	 symbol:E_R_tkt1_R
+push!(initial_condition_array,1.0);	#	183	 id:E_R_tkt2	 symbol:E_R_tkt2
+push!(initial_condition_array,1.0);	#	184	 id:E_R_tkt2_R	 symbol:E_R_tkt2_R
+push!(initial_condition_array,1.0);	#	185	 id:E_R_edd	 symbol:E_R_edd
+push!(initial_condition_array,1.0);	#	186	 id:E_R_eda	 symbol:E_R_eda
+push!(initial_condition_array,1.0);	#	187	 id:E_R_gltA	 symbol:E_R_gltA
+push!(initial_condition_array,1.0);	#	188	 id:E_R_acn	 symbol:E_R_acn
+push!(initial_condition_array,1.0);	#	189	 id:E_R_acn_R	 symbol:E_R_acn_R
+push!(initial_condition_array,1.0);	#	190	 id:E_R_icd	 symbol:E_R_icd
+push!(initial_condition_array,1.0);	#	191	 id:E_R_icd_R	 symbol:E_R_icd_R
+push!(initial_condition_array,1.0);	#	192	 id:E_R_sucAB	 symbol:E_R_sucAB
+push!(initial_condition_array,1.0);	#	193	 id:E_R_sucCD	 symbol:E_R_sucCD
+push!(initial_condition_array,1.0);	#	194	 id:E_R_sdh	 symbol:E_R_sdh
+push!(initial_condition_array,1.0);	#	195	 id:E_R_frd	 symbol:E_R_frd
+push!(initial_condition_array,1.0);	#	196	 id:E_R_fum	 symbol:E_R_fum
+push!(initial_condition_array,1.0);	#	197	 id:E_R_fum_R	 symbol:E_R_fum_R
+push!(initial_condition_array,1.0);	#	198	 id:E_R_mdh	 symbol:E_R_mdh
+push!(initial_condition_array,1.0);	#	199	 id:E_R_mdh_R	 symbol:E_R_mdh_R
+push!(initial_condition_array,1.0);	#	200	 id:E_R_cyd	 symbol:E_R_cyd
+push!(initial_condition_array,1.0);	#	201	 id:E_R_cyo	 symbol:E_R_cyo
+push!(initial_condition_array,1.0);	#	202	 id:E_R_app	 symbol:E_R_app
+push!(initial_condition_array,1.0);	#	203	 id:E_R_atp	 symbol:E_R_atp
+push!(initial_condition_array,1.0);	#	204	 id:E_R_nuo	 symbol:E_R_nuo
+push!(initial_condition_array,1.0);	#	205	 id:E_R_pnt1	 symbol:E_R_pnt1
+push!(initial_condition_array,1.0);	#	206	 id:E_R_pnt2	 symbol:E_R_pnt2
+push!(initial_condition_array,1.0);	#	207	 id:E_R_ndh1	 symbol:E_R_ndh1
+push!(initial_condition_array,1.0);	#	208	 id:E_R_ndh2	 symbol:E_R_ndh2
+push!(initial_condition_array,1.0);	#	209	 id:E_R_ppa	 symbol:E_R_ppa
+push!(initial_condition_array,1.0);	#	210	 id:E_R_aceA	 symbol:E_R_aceA
+push!(initial_condition_array,1.0);	#	211	 id:E_R_aceB	 symbol:E_R_aceB
+push!(initial_condition_array,1.0);	#	212	 id:E_R_maeA	 symbol:E_R_maeA
+push!(initial_condition_array,1.0);	#	213	 id:E_R_maeB	 symbol:E_R_maeB
+push!(initial_condition_array,1.0);	#	214	 id:E_R_pta	 symbol:E_R_pta
+push!(initial_condition_array,1.0);	#	215	 id:E_R_pta_R	 symbol:E_R_pta_R
+push!(initial_condition_array,1.0);	#	216	 id:E_R_ackA	 symbol:E_R_ackA
+push!(initial_condition_array,1.0);	#	217	 id:E_R_ackA_R	 symbol:E_R_ackA_R
+push!(initial_condition_array,1.0);	#	218	 id:E_R_acs	 symbol:E_R_acs
+push!(initial_condition_array,1.0);	#	219	 id:E_R_adhE	 symbol:E_R_adhE
+push!(initial_condition_array,1.0);	#	220	 id:E_R_adhE_R	 symbol:E_R_adhE_R
+push!(initial_condition_array,1.0);	#	221	 id:E_R_ldh	 symbol:E_R_ldh
+push!(initial_condition_array,1.0);	#	222	 id:E_R_ldh_R	 symbol:E_R_ldh_R
+push!(initial_condition_array,1.0);	#	223	 id:E_R_pflAB	 symbol:E_R_pflAB
+push!(initial_condition_array,1.0);	#	224	 id:E_R_alaAC	 symbol:E_R_alaAC
+push!(initial_condition_array,1.0);	#	225	 id:E_R_alaAC_R	 symbol:E_R_alaAC_R
+push!(initial_condition_array,1.0);	#	226	 id:E_R_arg	 symbol:E_R_arg
+push!(initial_condition_array,1.0);	#	227	 id:E_R_aspC	 symbol:E_R_aspC
+push!(initial_condition_array,1.0);	#	228	 id:E_R_asnB	 symbol:E_R_asnB
+push!(initial_condition_array,1.0);	#	229	 id:E_R_asnA	 symbol:E_R_asnA
+push!(initial_condition_array,1.0);	#	230	 id:E_R_cysEMK	 symbol:E_R_cysEMK
+push!(initial_condition_array,1.0);	#	231	 id:E_R_gltBD	 symbol:E_R_gltBD
+push!(initial_condition_array,1.0);	#	232	 id:E_R_gdhA	 symbol:E_R_gdhA
+push!(initial_condition_array,1.0);	#	233	 id:E_R_gdhA_R	 symbol:E_R_gdhA_R
+push!(initial_condition_array,1.0);	#	234	 id:E_R_glnA	 symbol:E_R_glnA
+push!(initial_condition_array,1.0);	#	235	 id:E_R_glyA	 symbol:E_R_glyA
+push!(initial_condition_array,1.0);	#	236	 id:E_R_his	 symbol:E_R_his
+push!(initial_condition_array,1.0);	#	237	 id:E_R_ile	 symbol:E_R_ile
+push!(initial_condition_array,1.0);	#	238	 id:E_R_leu	 symbol:E_R_leu
+push!(initial_condition_array,1.0);	#	239	 id:E_R_lys	 symbol:E_R_lys
+push!(initial_condition_array,1.0);	#	240	 id:E_R_met	 symbol:E_R_met
+push!(initial_condition_array,1.0);	#	241	 id:E_R_phe	 symbol:E_R_phe
+push!(initial_condition_array,1.0);	#	242	 id:E_R_pro	 symbol:E_R_pro
+push!(initial_condition_array,1.0);	#	243	 id:E_R_serABC	 symbol:E_R_serABC
+push!(initial_condition_array,1.0);	#	244	 id:E_R_thr	 symbol:E_R_thr
+push!(initial_condition_array,1.0);	#	245	 id:E_R_trp	 symbol:E_R_trp
+push!(initial_condition_array,1.0);	#	246	 id:E_R_tyr	 symbol:E_R_tyr
+push!(initial_condition_array,1.0);	#	247	 id:E_R_val	 symbol:E_R_val
+push!(initial_condition_array,1.0);	#	248	 id:E_R_arg_deg	 symbol:E_R_arg_deg
+push!(initial_condition_array,1.0);	#	249	 id:E_R_asp_deg	 symbol:E_R_asp_deg
+push!(initial_condition_array,1.0);	#	250	 id:E_R_asn_deg	 symbol:E_R_asn_deg
+push!(initial_condition_array,1.0);	#	251	 id:E_R_gly_deg	 symbol:E_R_gly_deg
+push!(initial_condition_array,1.0);	#	252	 id:E_R_mglx_deg	 symbol:E_R_mglx_deg
+push!(initial_condition_array,1.0);	#	253	 id:E_R_ser_deg	 symbol:E_R_ser_deg
+push!(initial_condition_array,1.0);	#	254	 id:E_R_pro_deg	 symbol:E_R_pro_deg
+push!(initial_condition_array,1.0);	#	255	 id:E_R_thr_deg1	 symbol:E_R_thr_deg1
+push!(initial_condition_array,1.0);	#	256	 id:E_R_thr_deg2	 symbol:E_R_thr_deg2
+push!(initial_condition_array,1.0);	#	257	 id:E_R_thr_deg3	 symbol:E_R_thr_deg3
+push!(initial_condition_array,1.0);	#	258	 id:E_R_trp_deg	 symbol:E_R_trp_deg
+push!(initial_condition_array,1.0);	#	259	 id:E_R_cys_deg	 symbol:E_R_cys_deg
+push!(initial_condition_array,1.0);	#	260	 id:E_R_lys_deg	 symbol:E_R_lys_deg
+push!(initial_condition_array,1.0);	#	261	 id:E_R_gln_deg	 symbol:E_R_gln_deg
+push!(initial_condition_array,1.0);	#	262	 id:E_R_glu_deg	 symbol:E_R_glu_deg
+push!(initial_condition_array,1.0);	#	263	 id:E_R_gaba_deg1	 symbol:E_R_gaba_deg1
+push!(initial_condition_array,1.0);	#	264	 id:E_R_gaba_deg2	 symbol:E_R_gaba_deg2
+push!(initial_condition_array,1.0);	#	265	 id:E_R_chor	 symbol:E_R_chor
+push!(initial_condition_array,1.0);	#	266	 id:E_R_fol_e	 symbol:E_R_fol_e
+push!(initial_condition_array,1.0);	#	267	 id:E_R_fol_1	 symbol:E_R_fol_1
+push!(initial_condition_array,1.0);	#	268	 id:E_R_fol_2a	 symbol:E_R_fol_2a
+push!(initial_condition_array,1.0);	#	269	 id:E_R_fol_2b	 symbol:E_R_fol_2b
+push!(initial_condition_array,1.0);	#	270	 id:E_R_fol_3	 symbol:E_R_fol_3
+push!(initial_condition_array,1.0);	#	271	 id:E_R_fol_4	 symbol:E_R_fol_4
+push!(initial_condition_array,1.0);	#	272	 id:E_R_gly_fol	 symbol:E_R_gly_fol
+push!(initial_condition_array,1.0);	#	273	 id:E_R_gly_fol_R	 symbol:E_R_gly_fol_R
+push!(initial_condition_array,1.0);	#	274	 id:E_R_mthfd	 symbol:E_R_mthfd
+push!(initial_condition_array,1.0);	#	275	 id:E_R_mthfd_R	 symbol:E_R_mthfd_R
+push!(initial_condition_array,1.0);	#	276	 id:E_R_mthfc	 symbol:E_R_mthfc
+push!(initial_condition_array,1.0);	#	277	 id:E_R_mthfc_R	 symbol:E_R_mthfc_R
+push!(initial_condition_array,1.0);	#	278	 id:E_R_mthfr2a	 symbol:E_R_mthfr2a
+push!(initial_condition_array,1.0);	#	279	 id:E_R_mthfr2b	 symbol:E_R_mthfr2b
+push!(initial_condition_array,1.0);	#	280	 id:E_R_prpp_syn	 symbol:E_R_prpp_syn
+push!(initial_condition_array,1.0);	#	281	 id:E_R_or_syn_1	 symbol:E_R_or_syn_1
+push!(initial_condition_array,1.0);	#	282	 id:E_R_or_syn_2	 symbol:E_R_or_syn_2
+push!(initial_condition_array,1.0);	#	283	 id:E_R_omp_syn	 symbol:E_R_omp_syn
+push!(initial_condition_array,1.0);	#	284	 id:E_R_ump_syn	 symbol:E_R_ump_syn
+push!(initial_condition_array,1.0);	#	285	 id:E_R_ctp_1	 symbol:E_R_ctp_1
+push!(initial_condition_array,1.0);	#	286	 id:E_R_ctp_2	 symbol:E_R_ctp_2
+push!(initial_condition_array,1.0);	#	287	 id:E_R_A_syn_1	 symbol:E_R_A_syn_1
+push!(initial_condition_array,1.0);	#	288	 id:E_R_A_syn_2	 symbol:E_R_A_syn_2
+push!(initial_condition_array,1.0);	#	289	 id:E_R_A_syn_3	 symbol:E_R_A_syn_3
+push!(initial_condition_array,1.0);	#	290	 id:E_R_A_syn_4	 symbol:E_R_A_syn_4
+push!(initial_condition_array,1.0);	#	291	 id:E_R_A_syn_5	 symbol:E_R_A_syn_5
+push!(initial_condition_array,1.0);	#	292	 id:E_R_A_syn_6	 symbol:E_R_A_syn_6
+push!(initial_condition_array,1.0);	#	293	 id:E_R_A_syn_7	 symbol:E_R_A_syn_7
+push!(initial_condition_array,1.0);	#	294	 id:E_R_A_syn_8	 symbol:E_R_A_syn_8
+push!(initial_condition_array,1.0);	#	295	 id:E_R_A_syn_9	 symbol:E_R_A_syn_9
+push!(initial_condition_array,1.0);	#	296	 id:E_R_A_syn_10	 symbol:E_R_A_syn_10
+push!(initial_condition_array,1.0);	#	297	 id:E_R_A_syn_12	 symbol:E_R_A_syn_12
+push!(initial_condition_array,1.0);	#	298	 id:E_R_xmp_syn	 symbol:E_R_xmp_syn
+push!(initial_condition_array,1.0);	#	299	 id:E_R_gmp_syn	 symbol:E_R_gmp_syn
+push!(initial_condition_array,1.0);	#	300	 id:E_R_atp_amp	 symbol:E_R_atp_amp
+push!(initial_condition_array,1.0);	#	301	 id:E_R_utp_ump	 symbol:E_R_utp_ump
+push!(initial_condition_array,1.0);	#	302	 id:E_R_ctp_cmp	 symbol:E_R_ctp_cmp
+push!(initial_condition_array,1.0);	#	303	 id:E_R_gtp_gmp	 symbol:E_R_gtp_gmp
+push!(initial_condition_array,1.0);	#	304	 id:E_R_atp_adp	 symbol:E_R_atp_adp
+push!(initial_condition_array,1.0);	#	305	 id:E_R_utp_adp	 symbol:E_R_utp_adp
+push!(initial_condition_array,1.0);	#	306	 id:E_R_ctp_adp	 symbol:E_R_ctp_adp
+push!(initial_condition_array,1.0);	#	307	 id:E_R_gtp_adp	 symbol:E_R_gtp_adp
+push!(initial_condition_array,1.0);	#	308	 id:E_R_udp_utp	 symbol:E_R_udp_utp
+push!(initial_condition_array,1.0);	#	309	 id:E_R_cdp_ctp	 symbol:E_R_cdp_ctp
+push!(initial_condition_array,1.0);	#	310	 id:E_R_gdp_gtp	 symbol:E_R_gdp_gtp
+push!(initial_condition_array,1.0);	#	311	 id:E_R_atp_ump	 symbol:E_R_atp_ump
+push!(initial_condition_array,1.0);	#	312	 id:E_R_atp_cmp	 symbol:E_R_atp_cmp
+push!(initial_condition_array,1.0);	#	313	 id:E_R_atp_gmp	 symbol:E_R_atp_gmp
+push!(initial_condition_array,1.0);	#	314	 id:E_R_adk_atp	 symbol:E_R_adk_atp
+push!(initial_condition_array,1.0);	#	315	 id:E_Import_o2	 symbol:E_Import_o2
+push!(initial_condition_array,1.0);	#	316	 id:E_Import_co2	 symbol:E_Import_co2
+push!(initial_condition_array,1.0);	#	317	 id:E_Import_pi	 symbol:E_Import_pi
+push!(initial_condition_array,1.0);	#	318	 id:E_Import_nh4	 symbol:E_Import_nh4
+push!(initial_condition_array,1.0);	#	319	 id:E_Import_so4	 symbol:E_Import_so4
+push!(initial_condition_array,1.0);	#	320	 id:E_Import_h2o	 symbol:E_Import_h2o
+push!(initial_condition_array,1.0);	#	321	 id:E_Export_o2	 symbol:E_Export_o2
+push!(initial_condition_array,1.0);	#	322	 id:E_Export_co2	 symbol:E_Export_co2
+push!(initial_condition_array,1.0);	#	323	 id:E_Export_pi	 symbol:E_Export_pi
+push!(initial_condition_array,1.0);	#	324	 id:E_Export_nh4	 symbol:E_Export_nh4
+push!(initial_condition_array,1.0);	#	325	 id:E_Export_so4	 symbol:E_Export_so4
+push!(initial_condition_array,1.0);	#	326	 id:E_Export_h2o	 symbol:E_Export_h2o
+push!(initial_condition_array,1.0);	#	327	 id:E_Proton_gradient	 symbol:E_Proton_gradient
+push!(initial_condition_array,1.0);	#	328	 id:E_transcriptional_initiation_CAT	 symbol:E_transcriptional_initiation_CAT
+push!(initial_condition_array,1.0);	#	329	 id:E_transcription_CAT	 symbol:E_transcription_CAT
+push!(initial_condition_array,1.0);	#	330	 id:E_mRNA_degradation_CAT	 symbol:E_mRNA_degradation_CAT
+push!(initial_condition_array,1.0);	#	331	 id:E_translation_initiation_CAT	 symbol:E_translation_initiation_CAT
+push!(initial_condition_array,1.0);	#	332	 id:E_translation_CAT	 symbol:E_translation_CAT
+push!(initial_condition_array,1.0);	#	333	 id:E_tRNA_charging_M_ala_L_c_CAT	 symbol:E_tRNA_charging_M_ala_L_c_CAT
+push!(initial_condition_array,1.0);	#	334	 id:E_tRNA_charging_M_arg_L_c_CAT	 symbol:E_tRNA_charging_M_arg_L_c_CAT
+push!(initial_condition_array,1.0);	#	335	 id:E_tRNA_charging_M_asn_L_c_CAT	 symbol:E_tRNA_charging_M_asn_L_c_CAT
+push!(initial_condition_array,1.0);	#	336	 id:E_tRNA_charging_M_asp_L_c_CAT	 symbol:E_tRNA_charging_M_asp_L_c_CAT
+push!(initial_condition_array,1.0);	#	337	 id:E_tRNA_charging_M_cys_L_c_CAT	 symbol:E_tRNA_charging_M_cys_L_c_CAT
+push!(initial_condition_array,1.0);	#	338	 id:E_tRNA_charging_M_glu_L_c_CAT	 symbol:E_tRNA_charging_M_glu_L_c_CAT
+push!(initial_condition_array,1.0);	#	339	 id:E_tRNA_charging_M_gln_L_c_CAT	 symbol:E_tRNA_charging_M_gln_L_c_CAT
+push!(initial_condition_array,1.0);	#	340	 id:E_tRNA_charging_M_gly_L_c_CAT	 symbol:E_tRNA_charging_M_gly_L_c_CAT
+push!(initial_condition_array,1.0);	#	341	 id:E_tRNA_charging_M_his_L_c_CAT	 symbol:E_tRNA_charging_M_his_L_c_CAT
+push!(initial_condition_array,1.0);	#	342	 id:E_tRNA_charging_M_ile_L_c_CAT	 symbol:E_tRNA_charging_M_ile_L_c_CAT
+push!(initial_condition_array,1.0);	#	343	 id:E_tRNA_charging_M_leu_L_c_CAT	 symbol:E_tRNA_charging_M_leu_L_c_CAT
+push!(initial_condition_array,1.0);	#	344	 id:E_tRNA_charging_M_lys_L_c_CAT	 symbol:E_tRNA_charging_M_lys_L_c_CAT
+push!(initial_condition_array,1.0);	#	345	 id:E_tRNA_charging_M_met_L_c_CAT	 symbol:E_tRNA_charging_M_met_L_c_CAT
+push!(initial_condition_array,1.0);	#	346	 id:E_tRNA_charging_M_phe_L_c_CAT	 symbol:E_tRNA_charging_M_phe_L_c_CAT
+push!(initial_condition_array,1.0);	#	347	 id:E_tRNA_charging_M_pro_L_c_CAT	 symbol:E_tRNA_charging_M_pro_L_c_CAT
+push!(initial_condition_array,1.0);	#	348	 id:E_tRNA_charging_M_ser_L_c_CAT	 symbol:E_tRNA_charging_M_ser_L_c_CAT
+push!(initial_condition_array,1.0);	#	349	 id:E_tRNA_charging_M_thr_L_c_CAT	 symbol:E_tRNA_charging_M_thr_L_c_CAT
+push!(initial_condition_array,1.0);	#	350	 id:E_tRNA_charging_M_trp_L_c_CAT	 symbol:E_tRNA_charging_M_trp_L_c_CAT
+push!(initial_condition_array,1.0);	#	351	 id:E_tRNA_charging_M_tyr_L_c_CAT	 symbol:E_tRNA_charging_M_tyr_L_c_CAT
+push!(initial_condition_array,1.0);	#	352	 id:E_tRNA_charging_M_val_L_c_CAT	 symbol:E_tRNA_charging_M_val_L_c_CAT

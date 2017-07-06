@@ -1,0 +1,22 @@
+pH = -log10([H+] in M)
+
+time(min)   pH
+0           7.3
+10          7.0
+90          7.05
+180         7.38
+approximately linear
+
+DO% = 100*[O2]/[O2]_sat
+
+O2: 32 g/mol
+[O2]_sat(37degC) = 6.71 mg/L = 0.2097 mM
+
+[O2] = [O2]_sat*DO%/100 = 0.2097 mM*DO%/100
+
+time(min)   DO%
+0           25
+2           0
+40          0
+180         50
+approximately linear

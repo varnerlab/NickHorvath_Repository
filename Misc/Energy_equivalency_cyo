@@ -1,0 +1,103 @@
+glc+2*atp = fdp
+(glc+2*atp)/2 = g3p
+(glc+2*atp)/2-5*atp = accoa
+(glc+2*atp)/2-5*atp+oaa = icit
+(glc+2*atp)/2-5*atp+oaa-5*atp = fum
+(glc+2*atp)/2-5*atp+oaa-5*atp-1.5*atp = oaa
+(glc+2*atp)/2 = 11.5*atp
+glc+2*atp = 23*atp
+glc = 21*atp
+
+g3p = accoa+5*atp
+icit = fum+5*atp
+
+g3p = 13dpg+nadh = 13dpg+1.5*atp
+13dpg = 3pg+atp
+3pg = 2pg
+2pg = pep
+pep = pyr+atp
+pyr = accoa+nadh = accoa+1.5*atp
+accoa+oaa = cit
+cit = icit
+icit = akg+nadph = akg+1.5*atp
+akg = succoa+nadh = succoa+1.5*atp
+succoa = succ+atp
+succ = fum+q8h2 = fum+atp
+fum = mal
+mal = oaa+nadh = oaa+1.5*atp
+
+nadph = nadh        (R_pnt1)
+nadh = q8h2+2*h_e   (R_nuo)
+q8h2 = 4*h_e        (R_cyo)
+nadh = 6*h_e
+4*h_e = atp         (R_atp)
+nadh = 1.5*atp
+
+g6p = glc+atp = 22*atp
+f6p = g6p = 22*atp
+fdp = f6p+atp = 23*atp
+dhap = 0.5*fdp = 11.5*atp
+g3p = 0.5*fdp = 11.5*atp
+13dpg = g3p-1.5*atp = 10*atp
+3pg = 13dpg-atp = 9*atp
+2pg = 3pg = 9*atp
+pep = 2pg = 9*atp
+pyr = pep-atp = 8*atp
+accoa = pyr-1.5*atp = 6.5*atp
+oaa = pep = 9*atp
+
+cit = accoa+oaa = 6.5*atp+9*atp = 15.5*atp
+icit = cit = 15.5*atp
+akg = icit-1.5*atp = 14*atp
+succoa = akg-1.5*atp = 12.5*atp
+succ = succoa-atp = 11.5*atp
+fum = succ-atp = 10.5*atp
+mal = fum = 10.5*atp
+glx = icit-succ = 4*atp
+
+6pgl = g6p-1.5*atp = 20.5*atp
+6pgc = 6pgl = 20.5*atp
+ru5p = 6pgc-1.5*atp = 19*atp
+xu5p = ru5p = 19*atp
+r5p = ru5p = 19*atp
+s7p = r5p+xu5p-g3p = 26.5*atp
+e4p = g3p+s7p-f6p = 16*atp
+2ddg6p = 6pgc = 20.5*atp
+
+actp = accoa = 6.5*atp
+ac = actp-atp = 5.5*atp
+etoh = accoa+3*atp = 9.5*atp
+lac = pyr+1.5*atp = 9.5*atp
+formate = pyr-accoa = 1.5*atp
+mql8 = nadh = 1.5*atp
+chor = e4p+2*pep+2.5*atp = 36.5*atp
+
+glu = akg+1.5*atp = 15.5*atp
+gln = glu+atp = 16.5*atp
+ala = glu+pyr-akg = 9.5*atp
+asp = glu+oaa-akg = 10.5*atp
+asn = asp+2*atp = 12.5*atp
+arg = glu+accoa+6.5*atp+gln+asp-akg-ac-fum = 25.5*atp
+ser = glu+3pg-akg-1.5*atp = 9*atp
+cys = ser+accoa-ac = 10*atp
+gly = ser = 9*atp
+his = gln+r5p+3*atp-akg-3*atp = 21.5*atp  Ignore aicar (although expensive to make, it doesn't really go anywhere useful)
+thr = asp+5*atp = 15.5*atp
+ile = thr+pyr+glu+1.5*atp-akg = 26.5*atp
+leu = 2*pyr+glu+1.5*atp+accoa-1.5*atp-akg = 24*atp
+lys = asp+4*atp+pyr+succoa+glu-akg-succ = 25*atp
+met = asp+cys+succoa+4*atp-succ-pyr = 17.5*atp
+phe = chor+glu-akg = 38*atp
+pro = glu+4*atp = 19.5*atp
+trp = chor+gln+ser+r5p+2*atp-glu-pyr-g3p = 48*atp
+tyr = chor+glu-akg-1.5*atp = 36.5*atp
+val = 2*pyr+1.5*atp+glu-akg = 19*atp
+
+CAT = 438*M_gtp_c+15.0*M_ala_L_c_tRNA+5.0*M_arg_L_c_tRNA+10.0*M_asn_L_c_tRNA+12.0*M_asp_L_c_tRNA+5.0*M_cys_L_c_tRNA+12.0*M_glu_L_c_tRNA+13.0*M_gln_L_c_tRNA+10.0*M_gly_L_c_tRNA+12.0*M_his_L_c_tRNA+9.0*M_ile_L_c_tRNA+13.0*M_leu_L_c_tRNA+12.0*M_lys_L_c_tRNA+9.0*M_met_L_c_tRN+20.0*M_phe_L_c_tRNA+7.0*M_pro_L_c_tRNA+10.0*M_ser_L_c_tRNA+13.0*M_thr_L_c_tRNA+5.0*M_trp_L_c_tRN+11.0*M_tyr_L_c_tRNA+16.0*M_val_L_c_tRNA = 438*atp+15*ala_tRNA+5*arg_tRNA+10*asn_tRNA+12*asp_tRNA+5*cys_tRNA+12*glu_tRNA+13*gln_tRNA+10*gly_tRNA+12*his_tRNA+9*ile_tRNA+13*leu_tRNA+12*lys_tRNA+9*met_tRNA+20*phe_tRNA+7*pro_tRNA+10*ser_tRNA+13*thr_tRNA+5*trp_tRNA+11*tyr_tRNA+16*val_tRNA = 438*atp+15*(2*atp+9.5*atp)+5*(2*atp+25.5*atp)+10*(2*atp+12.5*atp)+12*(2*atp+10.5*atp)+5*(2*atp+10*atp)+12*(2*atp+15.5*atp)+13*(2*atp+16.5*atp)+10*(2*atp+9*atp)+12*(2*atp+21.5*atp)+9*(2*atp+26.5*atp)+13*(2*atp+24*atp)+12*(2*atp+25*atp)+9*(2*atp+17.5*atp)+20*(2*atp+38*atp)+7*(2*atp+19.5*atp)+10*(2*atp+9*atp)+13*(2*atp+15.5*atp)+5*(2*atp+48*atp)+11*(2*atp+36.5*atp)+16*(2*atp+19*atp) = 5337*atp
+
+#438+15*(2+9.5)+5*(2+25.5)+10*(2+12.5)+12*(2+10.5)+5*(2+10)+12*(2+15.5)+13*(2+16.5)+10*(2+9)+12*(2+21.5)+9*(2+26.5)+13*(2+24)+12*(2+25)+9*(2+17.5)+20*(2+38)+7*(2+19.5)+10*(2+9)+13*(2+15.5)+5*(2+48)+11*(2+36.5)+16*(2+19)
+
+
+
+
+

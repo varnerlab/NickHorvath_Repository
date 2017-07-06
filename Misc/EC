@@ -1,0 +1,69 @@
+101	 R_arg_deg: M_arg_L_c+4.0*M_h2o_c+M_nad_c+M_akg_c+M_succoa_c = 2.0*M_h_c+M_co2_c+2.0*M_glu_L_c+2.0*M_nh3_c+M_nadh_c+M_succ_c+M_coa_c
+    EC 2.3.1.109 AND 3.5.3.23 AND 2.6.1.81 AND 1.2.1.71 AND 3.5.1.96
+
+#101	 R_arg_deg1: M_arg_L_c+5.0*M_h2o_c+M_atp_c+M_o2_c+2.0*M_nad_c+M_akg_c = 4.0*M_h_c+M_co2_c+M_urea_c+M_glu_L_c+M_pi_c+M_adp_c+M_nh4_c+M_h2o2_c+2.0*M_nadh_c+M_succ_c
+
+#102	 R_arg_deg2: M_arg_L_c+5.0*M_h2o_c+M_atp_c+M_o2_c+M_nad_c+M_nadp_c+M_akg_c = 4.0*M_h_c+M_co2_c+M_urea_c+M_glu_L_c+M_pi_c+M_adp_c+M_nh4_c+M_h2o2_c+M_nadh_c+M_nadph_c+M_succ_c
+
+#103	 R_arg_deg3: M_arg_L_c+5.0*M_h2o_c+M_atp_c+M_o2_c+2.0*M_nadp_c+M_akg_c = 4.0*M_h_c+M_co2_c+M_urea_c+M_glu_L_c+M_pi_c+M_adp_c+M_nh4_c+M_h2o2_c+2.0*M_nadph_c+M_succ_c
+
+#104	 R_arg_deg4: M_arg_L_c+3.0*M_h2o_c+2.0*M_akg_c+2.0*M_nad_c = 3.0*M_h_c+M_co2_c+M_urea_c+2.0*M_glu_L_c+2.0*M_nadh_c+M_succ_c
+
+#105	 R_arg_deg5: M_arg_L_c+3.0*M_h2o_c+2.0*M_akg_c+M_nad_c+M_nadp_c = 3.0*M_h_c+M_co2_c+M_urea_c+2.0*M_glu_L_c+M_nadh_c+M_nadph_c+M_succ_c
+
+#106	 R_arg_deg6: M_arg_L_c+M_accoa_c+4.0*M_h2o_c+M_akg_c+M_nad_c = M_coa_c+M_h_c+M_co2_c+2.0*M_nh4_c+2.0*M_glu_L_c+M_nadh_c+M_succ_c
+
+107	 R_thr_deg1: M_thr_L_c+M_nad_c+M_coa_c = M_nadh_c+M_h_c+M_accoa_c+M_gly_L_c
+    EC 4.1.2.48 AND 1.2.1.10
+
+108	 R_thr_deg2: M_thr_L_c+M_nad_c+M_o2_c+M_h2o_c = M_nadh_c+M_co2_c+M_h2o2_c+M_nh4_c+M_mglx_c
+    EC 1.1.1.103 AND 1.4.3.21
+
+#109	 R_thr_deg3: M_thr_L_c+M_coa_c+M_nad_c = M_gly_L_c+M_accoa_c+M_nadh_c+M_h_c
+
+110	 R_thr_deg3: M_thr_L_c+M_pi_c+M_adp_c = M_nh3_c+M_for_c+M_atp_c+M_prop_c
+    EC 4.3.1.19 AND 2.3.1.54 AND 2.3.1.8 AND (2.7.2.1 OR 2.7.2.15)
+
+111	 R_thr_deg4: M_thr_L_c+M_h_c+M_pyr_c+M_nadph_c+M_glu_L_c = M_h2o_c+M_co2_c+M_nh3_c+M_nadp_c+M_akg_c+M_ile_L_c
+    EC 4.3.1.19 AND 2.2.1.6 AND 1.1.1.86 AND 4.2.1.9 AND 2.6.1.42
+
+112	 R_gly_deg: M_gly_L_c+M_accoa_c+M_h_c+M_o2_c+M_h2o_c = M_coa_c+M_co2_c+M_h2o2_c+M_nh3_c+M_mglx_c
+    EC 2.3.1.29 AND 1.4.3.21
+
+113	 R_mglx_deg: M_mglx_c+M_nadp_c+M_h2o_c = M_pyr_c+M_nadph_c+M_h_c
+    EC 1.2.1.49
+
+114	 R_mglx_deg_R: M_pyr_c+M_nadph_c+M_h_c = M_mglx_c+M_nadp_c+M_h2o_c
+    EC 1.2.1.49
+
+115	 R_ser_deg: M_ser_L_c = M_nh3_c+M_pyr_c
+    EC 4.3.1.17 OR 4.3.1.19
+
+116	 R_pro_deg: M_pro_L_c+M_q8_c+2.0*M_h2o_c+M_nad_c = M_h_c+M_q8h2_c+M_nadh_c+M_glu_L_c
+    EC 1.5.5.2 AND 1.2.1.88
+
+117	 R_trp_deg: M_trp_L_c+M_h2o_c = M_indole_c+M_nh3_c+M_pyr_c
+    EC 4.1.99.1
+
+118	 R_cys_deg: M_cys_L_c+M_h2o_c = M_h2s_c+M_nh4_c+M_pyr_c
+    EC 4.4.1.8
+
+#119	 R_ala_deg: M_ala_L_c+M_h2o_c+M_q8_c = M_q8h2_c+M_nh4_c+M_pyr_c
+
+120	 R_lys_deg: M_lys_L_c = M_co2_c+M_cadav_c
+    EC 4.1.1.18
+
+121	 R_gln_deg: M_gln_L_c+M_h2o_c = M_nh3_c+M_glu_L_c
+    EC 3.5.1.2
+
+122	 R_glu_deg: M_glu_L_c = M_co2_c+M_gaba_c
+    EC 4.1.1.15
+
+123	 R_gaba_deg1: M_gaba_c+M_akg_c+M_h2o_c+M_nad_c = M_succ_c+M_glu_L_c+M_h_c+M_nadh_c
+    EC 2.6.1.19 AND (1.2.1.16 OR 1.2.1.24)
+
+124	 R_gaba_deg2: M_gaba_c+M_akg_c+M_h2o_c+M_nadp_c = M_succ_c+M_glu_L_c+M_h_c+M_nadph_c
+    EC 2.6.1.19 AND (1.2.1.16 OR 1.2.1.79)
+
+125	 R_asn_deg: M_asn_L_c+M_amp_c+M_ppi_c = M_nh3_c+M_asp_L_c+M_atp_c
+    EC 6.3.5.4

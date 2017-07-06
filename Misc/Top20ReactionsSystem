@@ -1,0 +1,40 @@
+13	 R_tpiA_R: M_g3p_c = M_dhap_c
+
+25	 R_pdh: M_coa_c+M_nad_c+M_pyr_c = M_accoa_c+M_co2_c+M_nadh_c
+
+26	 R_pps: M_atp_c+M_h2o_c+M_pyr_c = M_amp_c+2*M_h_c+M_pep_c+M_pi_c
+
+38	 R_tkt1_R: M_g3p_c+M_s7p_c = M_r5p_c+M_xu5p_D_c
+
+42	 R_eda: M_2ddg6p_c = M_g3p_c+M_pyr_c
+
+48	 R_sucAB: M_akg_c+M_coa_c+M_nad_c = M_co2_c+M_nadh_c+M_succoa_c
+
+51	 R_sdh: M_q8_c+M_succ_c = M_fum_c+M_q8h2_c
+
+61	 R_pta: M_accoa_c+M_pi_c = M_actp_c+M_coa_c
+
+64	 R_ackA_R: M_ac_c+M_atp_c = M_actp_c+M_adp_c
+
+67	 R_adhE_R: M_coa_c+M_etoh_c+2*M_nad_c = M_accoa_c+2*M_h_c+2*M_nadh_c
+
+68	 R_ldh_f: M_pyr_c+M_nadh_c+M_h_c = M_lac_D_c+M_nad_c
+
+70	 R_pflAB: M_coa_c+M_pyr_c = M_accoa_c+M_for_c
+
+71	 R_cyd: 2*M_h_c+0.5*M_o2_c+M_q8h2_c = M_h2o_c+M_q8_c+2*M_h_e
+
+74	 R_nuo: 3*M_h_c+M_nadh_c+M_q8_c = M_nad_c+M_q8h2_c+2*M_h_e
+
+75   R_pnt1: M_nad_c+M_nadph_c = M_nadh_c+M_nadp_c
+
+78	 R_ndh2: M_h_c+M_mqn8_c+M_nadh_c = M_mql8_c+M_nad_c
+
+89	 R_gtp: M_gdp_c+M_atp_c = M_gtp_c+M_adp_c
+
+99	 R_alaAC: M_pyr_c+M_glu_L_c = M_ala_L_c+M_akg_c
+
+107	 R_glnA: M_glu_L_c+M_atp_c+M_nh4_c = M_gln_L_c+M_h_c+M_adp_c+M_pi_c
+
+124	 R_arg_deg4: M_arg_L_c+3.0*M_h2o_c+2.0*M_akg_c+2.0*M_nad_c = 3.0*M_h_c+M_co2_c+M_urea_c+2.0*M_glu_L_c+2.0*M_nadh_c+M_succ_c
+

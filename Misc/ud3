@@ -1,0 +1,18 @@
+
+Integ = Float64[]
+for i in 1:size(a,1)
+    v = a[i,:]
+    trapez = .5*v[1:end-1]+.5*v[2:end]
+    tp = Tsim[2:end]-Tsim[1:end-1]
+    integ = sum(trapez.*tp)
+    push!(Integ,integ)
+end
+       
+
+
+
+
+
+
+
+

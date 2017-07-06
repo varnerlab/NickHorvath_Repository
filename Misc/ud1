@@ -1,0 +1,112 @@
+
+
+species = ["GLC" 98;"PYR" 100;"LAC" 102;"AC" 101;"SUCC" 116;"MAL" 103;"CAT" 96;"ATP" 104;"ADP" 105;"AMP" 106;"GTP" 107;"GDP" 108;"GMP" 109;"CTP" 113;"CDP" 114;"CMP" 115;"UTP" 110;"UDP" 111;"UMP" 112;"ALA" 124;"ASN" 120;"ASP" 117;"CYS" 121;"GLN" 135;"GLY" 118;"HIS" 123;"ILE" 119;"LEU" 133;"LYS" 122;"MET" 132;"PHE" 125;"PRO" 126;"SER" 127;"THR" 128;"TRP" 129;"TYR" 130;"VAL" 131]
+
+for j in 1:size(species,1)
+    key = species[j,1]
+    index = species[j,2]
+    println(key)
+    tmp = zeros(301,3215)
+    for i in 1:3215
+        X = readdlm("Ensemble/$i/X")
+        tmp[:,i] = X[:,index]
+    end
+    writedlm("Ens/"*key,tmp)
+end
+
+
+
+for j in 1:size(species,1)
+    key = species[j,1]
+    tmp = readdlm("Ens/"*key)
+    M = Float64[]
+    S = Float64[]
+    for i in 1:size(tmp,1)
+        v = tmp[i,:]
+        m = mean(v)
+        s = std(v)
+        push!(M,m)
+        push!(S,s)
+    end
+    writedlm("Ens/"*key*"_m",M)
+    writedlm("Ens/"*key*"_s",S)
+end
+
+
+
+tmp = zeros(301,3215)
+for i in 1:3215
+    X = readdlm("Ensemble/$i/X")
+    tmp[:,i] = X[:,104]+X[:,105]+X[:,106]
+end
+writedlm("Ens/AXP",tmp)
+
+GXP = zeros(301,3215)
+UXP = zeros(301,3215)
+CXP = zeros(301,3215)
+XXP = zeros(301,3215)
+ARG = zeros(301,3215)
+GLU = zeros(301,3215)
+for i in 1:3215
+    X = readdlm("Ensemble/$i/X")
+    GXP[:,i] = X[:,107]+X[:,108]+X[:,109]
+    UXP[:,i] = X[:,110]+X[:,111]+X[:,112]
+    CXP[:,i] = X[:,113]+X[:,114]+X[:,115]
+    XXP[:,i] = X[:,104]+X[:,105]+X[:,106]+X[:,107]+X[:,108]+X[:,109]+X[:,110]+X[:,111]+X[:,112]+X[:,113]+X[:,114]+X[:,115]
+    ARG[:,i] = X[:,35]
+    GLU[:,i] = X[:,134]
+end
+writedlm("Ens/GXP",GXP)
+writedlm("Ens/UXP",UXP)
+writedlm("Ens/CXP",CXP)
+writedlm("Ens/XXP",XXP)
+writedlm("Ens/ARG",ARG)
+writedlm("Ens/GLU",GLU)
+
+
+
+key = "GLU"
+tmp = readdlm("Ens/"*key)
+M = Float64[]
+S = Float64[]
+for i in 1:size(tmp,1)
+    v = tmp[i,:]
+    m = mean(v)
+    s = std(v)
+    push!(M,m)
+    push!(S,s)
+end
+writedlm("Ens/"*key*"_m",M)
+writedlm("Ens/"*key*"_s",S)
+
+
+
+Cost = Float64[]
+Tsim = vec(readdlm("Ensemble/1/Tsim"))
+for i in 1:3215
+    X = readdlm("Ensemble/$i/X")
+    Error,Keys = CalcError(experiment_data_dictionary,Tsim,X)
+    cost = sum(Error)
+    push!(Cost,cost)
+    writedlm("Ensemble/$i/cost",cost)
+end
+
+
+
+L = Float64[]
+for i in 1:3215
+    p = readdlm("Ensemble/$i/params")
+    lit_cost = CalcLitError(p)
+    writedlm("Ensemble/$i/lit_cost",lit_cost)
+    push!(L,lit_cost)
+end
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+
+
+Consumes = Int64[]
+for j in 1:length(str_array)
+    str = str_array[j]
+    for i in 1:length(str)
+        if str[i] == 'M'
+            if str[i+1:i+2] == "_a"
+                if str[i+3:i+6] == "tp_c"
+                    push!(Consumes,j)
+                end
+            end
+        end
+    end
+end
+
+a = Int64[]
+for i=1:69
+    if ~in(i,Consumes)
+        push!(a,i)
+    end
+end
+
+
+
+
+

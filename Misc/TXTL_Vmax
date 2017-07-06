@@ -1,0 +1,58 @@
+Vmax(TXinit,TX) = [0.007 - 0.0099] mM/h
+
+Vmax(TLinit,TL) = [0.295-0.789]mM/h
+
+mRNA degradation = 5.2 (1/h)
+    TEMPORARILY assume mRNA level of 0.0001 mM; IS consistent with results
+
+tRNA charging = [18, 19, or 171] (1/s)  BN 104980
+    Leucine concentration: 0.06 mM
+    assume half goes to complex
+    leucine-tRNA complex concentration: 0.03 mM
+
+
+
+min: 3.155
+max: 60.57
+
+Transcription
+
+mRNA elongation: 25 nt/s
+mRNA length: 660 nt				151+144+189+176
+mRNA "Kcat": 0.03788 s^-1
+
+RNAP: 67.5 nM
+mRNA "Vmax": 2.56 nM/s
+mRNA "Vmax": 9.2 uM/h
+after promoter: 8.3 uM/h
+
+
+Translation
+
+Peptide elongation: 1.5 aa/s
+Protein length: 219 aa			15+5+10+12+5+12+13+10+12+9+13+12+9+20+7+10+13+5+11+16
+Protein "Kcat": 0.00685 s^-1
+
+Ribo: 2300 nM
+Protein "Vmax": 15.75 nM/s
+Protein "Vmax": 0.0567 mM/h
+
+1000 nt = 300 nm				BN 100022, 100023
+distance between ribosomes (E coli): 22 nm
+distance between ribosomes (E coli): 73.333 nt
+polysome amplification constant: 9
+
+Protein "Vmax": 0.51 mM/h
+
+
+mRNA degradation
+
+0 - 18 min half life on BN
+
+x = x0*e^-kt
+
+ln(x/x0) = -kt
+
+ln(.5) = -k*t_half
+t_half = ln(2)/k
+k = ln(2)/t_half

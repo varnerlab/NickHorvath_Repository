@@ -1,0 +1,87 @@
+Cost = Float64[]
+for i in Indices
+    cost = readdlm("Ensemble/$i/cost")[1]
+    push!(Cost,cost)
+end
+
+X = Float64[]
+p_ = P[:,1]
+for i in h
+    p = P[:,i]
+    x = cor(p,p_)
+    push!(X,x)
+end
+
+j = 0
+for i in 1:7449
+    if isfile("Ensemble/$i/X_nc")
+        j += 1
+        println(j)
+        cp("Ensemble/$i","/home/nicholas/code/ssKinetic/Apr4/src/Ensemble/$j")
+    end
+end
+
+rate = readdlm("Ensemble/Best/rate_constant.dat")
+sat = readdlm("Ensemble/Best/saturation_constant.dat")
+s = vec(sat)
+s = s[find(s.>0)]
+cont = readdlm("Ensemble/Best/control_constant.dat")
+Param = [rate;s;cont[:,1];cont[:,2]]
+
+for i in 1:5609
+    println(i)
+    rate = readdlm("Ensemble/$i/rate_constant.dat")
+    sat = readdlm("Ensemble/Best/saturation_constant.dat")
+    s = vec(sat)
+    s = s[find(s.>0)]
+    cont = readdlm("Ensemble/$i/control_constant.dat")
+    tmp = [rate;s;cont[:,1];cont[:,2]]
+    Param = [Param tmp]
+end
+
+#==========================#
+Sub = [3841 996 ]
+
+C = ones(1)
+p_best = Param[:,1]
+for i in 2:5610
+    p = Param[:,i]
+    c = cor(p_best,p)
+    push!(C,c)
+end
+
+I = Int64[]
+D = Float64[]
+for i in 1:5610
+    if ~in(i,avoid)
+        d = C[i]
+        push!(I,i)
+        push!(D,d)
+    end
+end
+index = I[find(D.==minimum(D))[1]]
+
+X = Float64[]
+p_base = Param[:,index]
+for i in 1:5609
+    p = Param[:,i]
+    x = cor(p_base,p)
+    push!(X,x)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

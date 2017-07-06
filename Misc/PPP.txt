@@ -1,0 +1,41 @@
+Nick Horvath
+PPP
+2/16/17
+
+Outreach:
+
+    departmental outreach activities (CBE Women, Grasshopper, etc.)
+
+    EYH simulation project next year
+
+Academic/Professional:
+
+    Publishing the E. coli cell-free paper is the top priority
+
+    Model a more detailed description of transcription and translation
+        Next paper: fully kinetic model against hybrid cybernetic model
+
+    Build a fully kinetic glycoprotein model
+        The DeLisa lab has cell-free glycoprotein data
+
+    Already went to a conference this year, will go to one next year
+	    possibly AIChE, abstract is due in April
+
+    Do the A exam in the early summer
+        June (have ssKinetic paper mostly done)
+
+    Set committee this semester
+	    Drs. Varner and DeLisa + one more
+            possibly Fengqi You
+
+        DeLisa: bio questions during A exam
+        Fengqi You: hard math & optimization questions during A exam
+            look at mega-poster to get an idea
+
+    Possible NSF GROW PIs:
+        Uwe Sauer               ETHZ
+        Jens Nielsen            Chalmers, Sweden
+        van Riel                Dutch place
+        Palsson                 DTU
+        Jorg Stelling           ETHZ Basel, modelling
+        Vasiliy Hatzimanikatis  EPFL

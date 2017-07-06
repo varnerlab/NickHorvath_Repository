@@ -1,0 +1,22 @@
+kinetic_rate_array = kinetic_rate_array.*v;
+enzyme_rate_array = enzyme_rate_array.*u;
+
+v[mode_index] = cybernetic_variable_array[mode_index]/maximum_rate
+u[mode_index] = cybernetic_variable_array[mode_index]/total
+
+
+kinetic_rate_array = kinetic_rate_array.*(kinetic_rate_array/maximum_rate)
+enzyme_rate_array = enzyme_rate_array.*(kinetic_rate_array/total)
+
+kinetic_rate_array = kinetic_rate_array.*kinetic_rate_array./maximum_rate
+enzyme_rate_array = enzyme_rate_array.*kinetic_rate_array./total
+
+
+alpha + enzyme_rate_array - (beta+growth_rate).*state_array[1:number_of_modes]
+
+basal_enzyme_synthesis + enzyme_rate_array - (degradation_constant_array+growth_rate).*enzymes
+
+kinetic_rate_array = VMax.*enzymes.*reactant_sat_kinetics
+enzyme_rate_array = enzyme_synthesis_constant*reactant_sat_kinetics
+
+
