@@ -1,0 +1,67 @@
+I = Int64[]
+for i in 1:7449
+    if isdir("Ensemble_nc/$i")
+        push!(I,i)
+    end
+end
+
+Cost = Float64[]
+for i in 1:1000
+#    if isdir("Ensemble_nc/$i")
+    cost = readdlm("Ensemble/$i/cost")[1]
+    push!(Cost,cost)
+#    end
+end
+
+Indices = convert(Array{Int64},vec(readdlm("Indices")))
+for i in Indices
+    println(i)
+    X_nc = readdlm("Ensemble_nc/$i/X")
+    cost_nc = readdlm("Ensemble_nc/$i/cost")
+    writedlm("Ensemble/$i/X_nc",X_nc)
+    writedlm("Ensemble/$i/cost_nc",cost_nc)
+end
+
+rate = readdlm("Ensemble/Best/rate_constant.dat")
+cont = readdlm("Ensemble/Best/control_constant.dat")
+Param = [rate;cont[:,1];cont[:,2]]
+
+Indices = convert(Array{Int64},vec(readdlm("Indices")))
+for i in Indices
+    if i != 5075
+        println(i)
+        rate = readdlm("Ensemble/$i/rate_constant.dat")
+        cont = readdlm("Ensemble/$i/control_constant.dat")
+        tmp = [rate;cont[:,1];cont[:,2]]
+        Param = [Param tmp]
+    end
+end
+
+writedlm("Param_Array",Params)
+
+p_best = Param[:,1]
+C = ones(1)
+for i in 2:5609
+    p = Param[:,i]
+    c = cor(p_best,p)
+    push!(C,c)
+end
+
+C = ones(0)
+for i in 1:100
+	for j in i+1:100
+		p_i = Param[:,i]
+		p_j = Param[:,j]
+		c = cor(p_i,p_j)
+		push!(C,c)
+	end
+end
+
+
+
+
+
+
+
+
+

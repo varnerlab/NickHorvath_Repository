@@ -1,0 +1,39 @@
+Average E. coli cell radius: 0.4525 microns
+    reference: BioNumbers 104113 (Avg cell diam column)
+
+Average E. coli cell volume: 0.3881 cubic microns = 3.881e-16 L
+    4/3*pi*r^3
+
+Number of tRNA molecules per cell: 375000 = 6.227e-19 mol
+    reference: BioNumbers 108611
+
+Cellular tRNA concentration: 0.0016 M = 1.6 mM
+    (6.227e-19 mol)/(3.881e-16 L)
+
+
+
+Ribosomes:
+    1.6 uM  if 72% active
+    2.3 uM  if 100% active
+
+RNAP:
+    60-75 nM from Mike
+
+TX:
+    >5 nt/s
+    60 in vivo
+    20-30 cell-free
+
+TL:
+    >1 aa/s
+    20 in vivo
+    1.5-3 cell-free
+
+gene:
+    10 ug/mL
+    Mike uses 5 nM
+    
+    CAT gene: 2502619.41 Da = 4.156e-18 g = 2.503e6 g/mol = 2.503e12 ug/mol
+        reference: https://www.ncbi.nlm.nih.gov/nuccore/922227034
+    
+    (13 ug/mL)/(2.503e12 ug/mol) = 5.19e-12 mol/mL = 5.19e-9 M = 5.19 nM

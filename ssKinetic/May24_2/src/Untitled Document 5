@@ -1,0 +1,71 @@
+
+Cost = Float64[]
+for i in 1:1000
+    cost = readdlm("Ensemble_100/$i/cost")[1]
+    push!(Cost,cost)
+end
+
+
+for i in 1:100;println(i)
+    # Read parameters
+    rate = readdlm("Ensemble_100/$i/rate_constant.dat")
+    sat = readdlm("Ensemble_100/$i/saturation_constant.dat")
+    cont = readdlm("Ensemble_100/$i/control_constant.dat")
+    # Load into data_dictionary
+    data_dictionary = deepcopy(data_dictionary_best)
+    data_dictionary["RATE_CONSTANT_ARRAY"] = rate
+    data_dictionary["SATURATION_CONSTANT_ARRAY"] = sat
+    data_dictionary["CONTROL_PARAMETER_ARRAY"] = cont
+    # Solve the balance equations and calculate cost
+    Tsim,X = SolveBalances(TSTART,TSTOP,Ts,data_dictionary)
+    Error,Keys = CalcError(experiment_data_dictionary,Tsim,X)
+    KE = [Keys Error]
+#    cost = sum(Error)
+#    # Save the relevant information
+#    writedlm("Ensemble_100/$i/Tsim",Tsim)
+#    writedlm("Ensemble_100/$i/X",X)
+#    writedlm("Ensemble_100/$i/cost",cost)
+    writedlm("Ensemble_100/$i/KE",KE)
+end
+
+KE = readdlm("Rand1000/1/KE")
+for i in 2:100;println(i)
+    ke = readdlm("Rand1000/$i/KE")
+    if ke[:,1] == KE[:,1]
+        KE = [KE ke[:,2]]
+    else
+        println(i)
+        throw("Wrong order")
+    end
+end
+
+M = Float64[]
+L = Float64[]
+H = Float64[]
+A = Float64[]
+B = Float64[]
+for i in 1:37
+    tmp = vec(KE[i,2:end])
+    sort!(tmp)
+    KE_median = .5*tmp[500]+.5*tmp[501]
+    KE_low_q = .5*tmp[250]+.5*tmp[251]
+    KE_high_q = .5*tmp[750]+.5*tmp[751]
+    KE_max = maximum(tmp)
+    KE_min = minimum(tmp)
+    push!(M,KE_median)
+    push!(L,KE_low_q)
+    push!(H,KE_high_q)
+    push!(A,KE_min)
+    push!(B,KE_max)
+end
+
+[["Species" "minimum" "lower quartile" "median" "upper quartile" "maximum"];[KE[:,1] A L M H B]]
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+Param = zeros(990,1)
+for i in 1:100
+    println(i)
+    rate = readdlm("Ensemble100/$i/rate_constant.dat")
+    sat = readdlm("Ensemble100/$i/saturation_constant.dat")
+    s = vec(sat)
+    s = s[find(s.>0)]
+    cont = readdlm("Ensemble100/$i/control_constant.dat")
+    tmp = [rate;s;cont[:,1];cont[:,2]]
+    Param = [Param tmp]
+end
+Param = Param[:,2:end]
+
+Rate = Param[1:204,:]
+Enz = Param[205:408,:]
+Sat = Param[409:956,:]
+ContGain = Param[957:973,:]
+ContOrder = Param[974:990,:]
+
+M = Float64[]
+S = Float64[]
+Max = Float64[]
+Min = Float64[]
+for j in 1:990
+    p = Param[j,:]
+    m = mean(p)
+    s = std(p)
+    max_ = maximum(p)
+    min_ = minimum(p)
+    push!(M,m)
+    push!(S,s)
+    push!(Max,max_)
+    push!(Min,min_)
+end
+
+P = zeros(990,1)
+for i in 1:1000
+    p = Min+(Max-Min).*rand(990)
+    P = [P p]
+end
+P = P[:,2:end]
+
+for i in 1:1000
+    println(i)
+    p = P[:,i]
+    rate = p[1:408]
+    s = p[408+1:408+548]
+    sat = readdlm("saturation_constant.dat")
+    sat[find(sat.>0)] = s
+    cont = p[408+548+1:end]
+    cont = [cont[1:17] cont[18:end]]
+    mkdir("Rand1000/$i")
+    writedlm("Rand1000/$i/rate_constant.dat",rate)
+    writedlm("Rand1000/$i/saturation_constant.dat",sat)
+    writedlm("Rand1000/$i/control_constant.dat",cont)
+end
+
+#for i in 1:1000
+#    # Read parameters
+#    rate = readdlm("Ensemble/$i/rate_constant.dat")
+#    sat = readdlm("Ensemble/$i/saturation_constant.dat")
+#    cont = readdlm("Ensemble/$i/control_constant.dat")
+#    # Load into data_dictionary
+#    data_dictionary = deepcopy(data_dictionary_best)
+#    data_dictionary["RATE_CONSTANT_ARRAY"] = rate
+#    data_dictionary["SATURATION_CONSTANT_ARRAY"] = sat
+#    data_dictionary["CONTROL_PARAMETER_ARRAY"] = cont
+#    # Solve the balance equations and calculate cost
+#    Tsim,X = SolveBalances(TSTART,TSTOP,Ts,data_dictionary)
+#    Error,Keys = CalcError(experiment_data_dictionary,Tsim,X)
+#    KE = [Keys Error]
+#    cost = sum(Error)
+#    # Save the relevant information
+#    writedlm("Ensemble/$i/Tsim",Tsim)
+#    writedlm("Ensemble/$i/X",X)
+#    writedlm("Ensemble/$i/cost",cost)
+#    writedlm("Ensemble/$i/KE",KE)
+#end
+

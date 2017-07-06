@@ -1,0 +1,53 @@
+Prod = zeros(204,204)
+State = zeros(204,204)
+for i in 1:204
+	for j in i+1:204
+		str = "$i"*"_$j";println(str)
+		prod = readdlm("Sens/$str/prod_sens")[1]
+		state = readdlm("Sens/$str/state_sens")[1]
+		Prod[i,j] = prod
+		Prod[j,i] = prod
+		State[i,j] = state
+		State[j,i] = state
+	end
+end
+
+for i in 1:204
+	str = "$i";println(str)
+	prod = readdlm("Sens/$str/prod_sens")[1]
+	state = readdlm("Sens/$str/state_sens")[1]
+	Prod[i,i] = prod
+	State[i,i] = state
+end
+
+writedlm("Sens/Prod",Prod)
+writedlm("Sens/State",State)
+
+
+
+
+
+
+X_best = readdlm("Sens/Best/X")
+prod_best = X_best[end,98]/3.0
+
+P = zeros(204,204)
+for i in 1:204
+	for j in i+1:204
+		str = "$i"*"_$j";println(str)
+		X = readdlm("Sens/$str/X")
+		prod = X[end,98]/3.0
+		prod_sens = abs(prod-prod_best)
+		P[i,j] = prod_sens
+		P[j,i] = prod_sens
+	end
+end
+
+for i in 1:204
+	str = "$i";println(str)
+	X = readdlm("Sens/$str/X")
+	prod = X[end,98]/3.0
+	prod_sens = abs(prod-prod_best)
+	P[i,i] = prod_sens
+end
+

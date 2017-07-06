@@ -1,0 +1,69 @@
+May2:
+
+Prod:
+
+21
+13
+8
+6
+4
+4
+3
+3
+2
+2	sum: 66
+
+"tRNA_charging_M_arg_L_c_CAT"   (least sensitive)
+"tRNA_charging_M_ala_L_c_CAT"   
+"transcriptional_initiation_CAT"
+"R_gdp_gtp"                     
+"R_cys_deg"                     
+"tRNA_charging_M_gln_L_c_CAT"   
+"R_pfk"                         
+"tRNA_charging_M_met_L_c_CAT"   
+"R_asp_deg"                     
+"tRNA_charging_M_asp_L_c_CAT"   
+"tRNA_charging_M_phe_L_c_CAT"   
+"tRNA_charging_M_leu_L_c_CAT"   
+"tRNA_charging_M_trp_L_c_CAT"   
+"tRNA_charging_M_asn_L_c_CAT"   
+"R_gln_deg"                     
+"tRNA_charging_M_cys_L_c_CAT"   
+"tRNA_charging_M_glu_L_c_CAT"   
+"Import_pi"                     
+"R_adk_atp"                     
+"mRNA_degradation_CAT"			(most sensitive)
+
+State:
+
+24
+24
+9
+7
+4
+3
+3
+2
+2
+1	sum: 79
+
+"R_pck"    						(least sensitive)
+"R_cyo"    
+"R_ackA_R" 
+"R_pdh"    
+"R_gapA"   
+"R_ldh"    
+"R_ldh_R"  
+"R_pfk"    
+"R_atp"    
+"R_atp_adp"
+"R_sucCD"  
+"R_acs"    
+"R_ackA"   
+"R_pta"    
+"R_alaAC"  
+"R_atp_amp"
+"R_adk_atp"
+"Import_pi"
+"R_nuo"    
+"R_atp_ump"						(most sensitive)

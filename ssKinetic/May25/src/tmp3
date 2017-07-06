@@ -1,0 +1,9 @@
+12	R_pgk:	M_3pg_c+M_atp_c
+18	R_pyk:	M_atp_c+M_pyr_c
+45	R_sucCD:	M_atp_c+M_coa_c+M_succ_c
+55	R_atp:	M_atp_c+4*M_h_c+M_h2o_c
+68	R_ackA:	M_ac_c+M_atp_c
+102	R_asn_deg:	M_nh3_c+M_asp_L_c+M_atp_c
+109	R_thr_deg3:	M_nh3_c+M_for_c+M_atp_c+M_prop_c
+
+

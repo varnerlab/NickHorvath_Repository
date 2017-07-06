@@ -1,0 +1,50 @@
+
+
+#j = 0
+
+#for i in 0:346
+#	j += 1
+#	cp("EnsembleDell/$i","Ensemble/$j")
+#end
+
+#for i in 0:1644
+#	j += 1
+#	cp("EnsembleASUS/$i","Ensemble/$j")
+#end
+
+#for i in 0:1883
+#	j += 1
+#	cp("EnsembleLemur/$i","Ensemble/$j")
+#end
+
+
+#cost = Float64[]
+#for i in 1:3875
+#	c = readdlm("Ensemble/$i/cost_unweighted")[1]
+#	push!(cost,c)
+#end
+
+
+0.0469227  0.718856  0.69408  1.0
+
+
+j = 0
+Index = convert(Array{Int64},readdlm("Ensemble/Index_100"))
+for i in Index
+	j += 1
+	cp("Ensemble/$i","Ensemble_100/$j")
+end
+
+
+
+#for i in 567:3876
+#	println(i)
+#	j = i-1
+#	mv("Ensemble/$i","Ensemble/$j")
+#end
+
+
+
+
+
+
