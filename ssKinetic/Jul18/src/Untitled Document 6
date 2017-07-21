@@ -1,0 +1,53 @@
+Cost = zeros(204,204)
+CAT = zeros(204,204)
+State = zeros(204,204)
+for i in 1:204
+	for j in i+1:204
+		str = "$i"*"_$j";println(str)
+		cost = readdlm("Sens/$str/cost")[1]
+		cat = readdlm("Sens/$str/CAT_sens")[1]
+		state = readdlm("Sens/$str/state_sens")[1]
+		Cost[i,j] = cost
+		Cost[j,i] = cost
+		CAT[i,j] = cat
+		CAT[j,i] = cat
+		State[i,j] = state
+		State[j,i] = state
+	end
+end
+
+for i in 1:204
+	str = "$i";println(str)
+	cost = readdlm("Sens/$str/cost")[1]
+	cat = readdlm("Sens/$str/CAT_sens")[1]
+	state = readdlm("Sens/$str/state_sens")[1]
+	Cost[i,i] = cost
+	CAT[i,i] = cat
+	State[i,i] = state
+end
+
+
+
+X_best = readdlm("Sens/Best/X")
+prod_best = X_best[end,98]/3.0
+
+P = zeros(204,204)
+for i in 1:204
+	for j in i+1:204
+		str = "$i"*"_$j";println(str)
+		X = readdlm("Sens/$str/X")
+		prod = X[end,98]/3.0
+		prod_sens = abs(prod-prod_best)
+		P[i,j] = prod_sens
+		P[j,i] = prod_sens
+	end
+end
+
+for i in 1:204
+	str = "$i";println(str)
+	X = readdlm("Sens/$str/X")
+	prod = X[end,98]/3.0
+	prod_sens = abs(prod-prod_best)
+	P[i,i] = prod_sens
+end
+

@@ -1,0 +1,15 @@
+change TX kinetics to be sat in GENE and first-order in RNAP
+change stoichiometry matrix to no longer include GENE, RNAP, OPEN_GENE
+
+change rate[180] to 0		TX init no longer occurs
+change rate[181] to 5400	TX kcat instead of Vmax
+	was .6740711787216361 previously
+
+change rate[183] to 0		TL init no longer occurs
+change rate[184] to 240
+	was 40.106026792106334 prevously
+
+
+change rate[386] to 0		mRNA deg has no enzyme
+
+change rate[385], [388] to 0

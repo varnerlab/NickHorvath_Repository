@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+
+
+
+Cost = Float64[]
+for i in 1:1000
+    cost = readdlm("Ensemble/$i/cost")[1]
+    push!(Cost,cost)
+end
+
+
+
+
+
+ensemble:   13.3 +/- 0.9
+
+random:     21.7 +/- 6.3
+
+
+
+
+
+
+KE = readdlm("Ensemble/1/KE")
+for i in 2:1000
+    ke = readdlm("Ensemble/$i/KE")
+    if ke[:,1] == KE[:,1]
+        KE = [KE ke[:,2]]
+    else
+        println(i)
+        throw("Wrong order")
+    end
+end
+
+
+M = Float64[]
+L = Float64[]
+H = Float64[]
+A = Float64[]
+B = Float64[]
+for i in 1:37
+    tmp = vec(KE[i,2:end])
+    sort!(tmp)
+    KE_median = .5*tmp[500]+.5*tmp[501]
+    KE_low_q = .5*tmp[250]+.5*tmp[251]
+    KE_high_q = .5*tmp[750]+.5*tmp[751]
+    KE_max = maximum(tmp)
+    KE_min = minimum(tmp)
+    push!(M,KE_median)
+    push!(L,KE_low_q)
+    push!(H,KE_high_q)
+    push!(A,KE_min)
+    push!(B,KE_max)
+end
+
+[["Species" "minimum" "lower quartile" "median" "upper quartile" "maximum"];[KE[:,1] A L M H B]]
+
+
+
+
+
+
+
+
+
