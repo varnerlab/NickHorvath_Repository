@@ -1,0 +1,294 @@
+N = Dict()
+0
+N["GENE_CAT"] = 1
+1
+N["M_10fthf_c"] = 2
+2
+N["M_13dpg_c"] = 3
+3
+N["M_2ddg6p_c"] = 4
+4
+N["M_2pg_c"] = 5
+5
+N["M_3pg_c"] = 6
+6
+N["M_4abz_c"] = 7
+7
+N["M_4adochor_c"] = 8
+8
+N["M_5mthf_c"] = 9
+9
+N["M_5pbdra"] = 10
+10
+N["M_6pgc_c"] = 11
+11
+N["M_6pgl_c"] = 12
+12
+N["M_78dhf_c"] = 13
+13
+N["M_78mdp_c"] = 14
+14
+N["M_ac_c"] = 15
+15
+N["M_accoa_c"] = 16
+16
+N["M_actp_c"] = 17
+17
+N["M_adp_c"] = 18
+18
+N["M_aicar_c"] = 19
+19
+N["M_air_c"] = 20
+20
+N["M_akg_c"] = 21
+21
+N["M_ala_L_c"] = 22
+22
+N["M_ala_L_c_tRNA"] = 23
+23
+N["M_amp_c"] = 24
+24
+N["M_arg_L_c"] = 25
+25
+N["M_arg_L_c_tRNA"] = 26
+26
+N["M_asn_L_c"] = 27
+27
+N["M_asn_L_c_tRNA"] = 28
+28
+N["M_asp_L_c"] = 29
+29
+N["M_asp_L_c_tRNA"] = 30
+30
+N["M_atp_c"] = 31
+31
+N["M_cadav_c"] = 32
+32
+N["M_cair_c"] = 33
+33
+N["M_cdp_c"] = 34
+34
+N["M_chor_c"] = 35
+35
+N["M_cit_c"] = 36
+36
+N["M_clasp_c"] = 37
+37
+N["M_cmp_c"] = 38
+38
+N["M_co2_c"] = 39
+39
+N["M_coa_c"] = 40
+40
+N["M_ctp_c"] = 41
+41
+N["M_cys_L_c"] = 42
+42
+N["M_cys_L_c_tRNA"] = 43
+43
+N["M_dhap_c"] = 44
+44
+N["M_dhf_c"] = 45
+45
+N["M_e4p_c"] = 46
+46
+N["M_etoh_c"] = 47
+47
+N["M_f6p_c"] = 48
+48
+N["M_faicar_c"] = 49
+49
+N["M_fdp_c"] = 50
+50
+N["M_fgam_c"] = 51
+51
+N["M_fgar_c"] = 52
+52
+N["M_for_c"] = 53
+53
+N["M_fum_c"] = 54
+54
+N["M_g3p_c"] = 55
+55
+N["M_g6p_c"] = 56
+56
+N["M_gaba_c"] = 57
+57
+N["M_gar_c"] = 58
+58
+N["M_gdp_c"] = 59
+59
+N["M_glc_D_c"] = 60
+60
+N["M_gln_L_c"] = 61
+61
+N["M_gln_L_c_tRNA"] = 62
+62
+N["M_glu_L_c"] = 63
+63
+N["M_glu_L_c_tRNA"] = 64
+64
+N["M_glx_c"] = 65
+65
+N["M_gly_L_c"] = 66
+66
+N["M_gly_L_c_tRNA"] = 67
+67
+N["M_glycoA_c"] = 68
+68
+N["M_gmp_c"] = 69
+69
+N["M_gtp_c"] = 70
+70
+N["M_h2o2_c"] = 71
+71
+N["M_h2o_c"] = 72
+72
+N["M_h2s_c"] = 73
+73
+N["M_h_c"] = 74
+74
+N["M_h_e"] = 75
+75
+N["M_hco3_c"] = 76
+76
+N["M_his_L_c"] = 77
+77
+N["M_his_L_c_tRNA"] = 78
+78
+N["M_icit_c"] = 79
+79
+N["M_ile_L_c"] = 80
+80
+N["M_ile_L_c_tRNA"] = 81
+81
+N["M_imp_c"] = 82
+82
+N["M_indole_c"] = 83
+83
+N["M_lac_D_c"] = 84
+84
+N["M_leu_L_c"] = 85
+85
+N["M_leu_L_c_tRNA"] = 86
+86
+N["M_lys_L_c"] = 87
+87
+N["M_lys_L_c_tRNA"] = 88
+88
+N["M_mal_L_c"] = 89
+89
+N["M_met_L_c"] = 90
+90
+N["M_met_L_c_tRNA"] = 91
+91
+N["M_methf_c"] = 92
+92
+N["M_mglx_c"] = 93
+93
+N["M_mlthf_c"] = 94
+94
+N["M_mql8_c"] = 95
+95
+N["M_mqn8_c"] = 96
+96
+N["M_nad_c"] = 97
+97
+N["M_nadh_c"] = 98
+98
+N["M_nadp_c"] = 99
+99
+N["M_nadph_c"] = 100
+100
+N["M_nh3_c"] = 101
+101
+N["M_nh4_c"] = 102
+102
+N["M_o2_c"] = 103
+103
+N["M_oaa_c"] = 104
+104
+N["M_omp_c"] = 105
+105
+N["M_or_c"] = 106
+106
+N["M_pep_c"] = 107
+107
+N["M_phe_L_c"] = 108
+108
+N["M_phe_L_c_tRNA"] = 109
+109
+N["M_pi_c"] = 110
+110
+N["M_ppi_c"] = 111
+111
+N["M_pro_L_c"] = 112
+112
+N["M_pro_L_c_tRNA"] = 113
+113
+N["M_prop_c"] = 114
+114
+N["M_prpp_c"] = 115
+115
+N["M_pyr_c"] = 116
+116
+N["M_q8_c"] = 117
+117
+N["M_q8h2_c"] = 118
+118
+N["M_r5p_c"] = 119
+119
+N["M_ru5p_D_c"] = 120
+120
+N["M_s7p_c"] = 121
+121
+N["M_saicar_c"] = 122
+122
+N["M_ser_L_c"] = 123
+123
+N["M_ser_L_c_tRNA"] = 124
+124
+N["M_so4_c"] = 125
+125
+N["M_succ_c"] = 126
+126
+N["M_succoa_c"] = 127
+127
+N["M_thf_c"] = 128
+128
+N["M_thr_L_c"] = 129
+129
+N["M_thr_L_c_tRNA"] = 130
+130
+N["M_trp_L_c"] = 131
+131
+N["M_trp_L_c_tRNA"] = 132
+132
+N["M_tyr_L_c"] = 133
+133
+N["M_tyr_L_c_tRNA"] = 134
+134
+N["M_udp_c"] = 135
+135
+N["M_ump_c"] = 136
+136
+N["M_utp_c"] = 137
+137
+N["M_val_L_c"] = 138
+138
+N["M_val_L_c_tRNA"] = 139
+139
+N["M_xmp_c"] = 140
+140
+N["M_xu5p_D_c"] = 141
+141
+N["PROTEIN_CAT"] = 142
+142
+N["RIBOSOME"] = 143
+143
+N["RNAP"] = 144
+144
+N["mRNA_CAT"] = 145
+145
+N["tRNA"] = 146
+146
