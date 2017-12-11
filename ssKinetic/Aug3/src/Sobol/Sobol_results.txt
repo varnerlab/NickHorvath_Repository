@@ -1,0 +1,6 @@
+Parameter S1 S1_conf ST ST_conf
+TX_Vmax 0.326728 0.166992 0.429946 0.059622
+TL_Vmax 0.563029 0.211536 0.659119 0.078471
+
+Parameter_1 Parameter_2 S2 S2_conf
+TX_Vmax TL_Vmax 0.110258 0.280918

@@ -1,0 +1,19 @@
+Figures 1-3 (fits)
+	Algorithm.jl
+	PlotEnsemble.jl
+	PlotEnsemble_nc.jl
+		put note in MassBalances.jl about no allo case
+
+Figure 4 (random)
+	Rand1000.jl
+
+Figure 5 (fluxes)
+	PrintFluxes.jl
+		put note in MassBalances.jl about saving fluxes
+
+Figure 6 (KOs)
+	CalcKO.jl
+
+Figure 7 (energy balance)
+	CalcATPYield.jl
+
